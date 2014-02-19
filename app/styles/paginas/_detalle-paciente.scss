@@ -2,5 +2,47 @@
 .perfil-paciente-img {
   @include inline-block(top);
   @include border-radius(50%);
-  max-width: 180px;
+  max-width: 16rem;
+}
+
+.perfil-paciente-info {
+  @include inline-block(top);
+}
+
+.paciente-foto-wrap {
+  @include inline-block(top);
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.tabla-citas-paciente {
+  margin-top: 2rem;
+}
+
+.btn-nueva-cita {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+.perfil-paciente-datos-wrap {
+  @include inline-block(top);
+}
+
+.dato-definicion {
+  font-weight: bold;
+}
+
+// TODO: widget de fijo
+.categoria-tag {
+  @include inline-block;
+  padding: 1px 3px;
+  background: $brand-success;
+  color: $component-active-color;
+  border-radius: $border-radius-small;
+}
+
+.vegano-tag {
+  background: $brand-info;
 }
