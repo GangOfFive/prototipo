@@ -1,0 +1,6 @@
+// TODO: widget?
+.perfil-paciente-img {
+  @include inline-block(top);
+  @include border-radius(50%);
+  max-width: 180px;
+}

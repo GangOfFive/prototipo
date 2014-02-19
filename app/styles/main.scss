@@ -2,23 +2,11 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import "bootstrap-theme";
 @import "sass-bootstrap/lib/bootstrap";
-//@import "hbp-overrides";
 @import "compass";
 
+@import "paginas/detalle-paciente";
+@import "paginas/pacientes";
 
 .navbar {
   margin: 1rem 0;
-}
-
-.user-list-bar {
-//  margin: 1rem 0 .5rem;
-}
-
-.btn-paciente-nuevo {
-  float: right;
-}
-
-.table-top-form {
-  padding-left: 0;
-  padding-right: 0;
 }
