@@ -113,13 +113,97 @@
         </ul>
     </div>
 
-    <div id="paciente-detalle" class="hidden">
-        <h2>Gerardo Parajeles</h2>
-        <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
+    <div id="paciente-detalle" class="container hidden">
+        <div class="row">
+            <div class="col-xs-4 col-sm-3 col-md-3">
+                <div class="paciente-foto-wrap">
+                    <button class="btn btn-success btn-sm btn-nueva-cita">Nueva Cita</button>
+                    <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-9 col-md-9">
+                <section class="perfil-paciente-info">
+                    <h2>Gerardo Parajeles</h2>
+                    <p>Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
+
+                    <div class="perfil-paciente-datos-wrap">
+                        <h3>Datos</h3>
+                        <ul class="perfil-paciente-datos">
+                            <li><span class="dato-definicion">Edad</span> 29 años</li>
+                            <li><span class="dato-definicion">Peso actual</span> 75kg</li>
+                            <li><span class="dato-definicion">Altura</span> 1.74cm</li>
+                            <li><span class="dato-definicion">Objetivo</span> bajar de peso</li>
+                            <li><span class="dato-definicion">Categorías</span> <span class="categoria-tag hipertenso-tag">hipertenso</span> <span class="categoria-tag vegano-tag">vegano</span></dt>
+                        </ul>
+                    </div>
+
+                    <div class="perfil-paciente-datos-wrap">
+                        <h3>Contacto</h3>
+                        <ul class="perfil-paciente-contacto">
+                            <li><span class="dato-definicion">Tel.</span> 555-Chocolito</li>
+                            <li><span class="dato-definicion">Correo</span> mock@parajeles.com</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Ultimas citas</h3>
+                <table class="table table-striped table-bordered table-hover tabla-citas-paciente">
+                    <thead>
+                    <tr>
+                        <th>Última cita</th>
+                        <th>Peso</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>hace 5 días</td>
+                        <td>77kg</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-success btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Editar</button>
+                                <button class="btn btn-error btn-sm">Borrar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hace 10 días</td>
+                        <td>79kg</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-success btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Editar</button>
+                                <button class="btn btn-error btn-sm">Borrar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hace 1 mes</td>
+                        <td>81kg</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-success btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Editar</button>
+                                <button class="btn btn-error btn-sm">Borrar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h3>Estadísticas</h3>
+                <img src="http://d3js.org/ex/population.png" alt=""/>
+                <img src="http://d3js.org/ex/show-reel.png" alt=""/>
+            </div>
+        </div>
     </div>
 
-    <div class="hidden" id="objetivo-paciente">
-
+    <div id="objetivo-paciente" class="hidden">
         <h2>Nuevo Objetivo</h2>
         <div class="row">
             <div class="col-md-8">
@@ -174,7 +258,6 @@
             </div>
         </div>
     </div>
-
 
     <div id="nueva-receta">
         <form class="form-horizontal" role="form">

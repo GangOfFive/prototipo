@@ -12,3 +12,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 .navbar {
   margin: 1rem 0;
 }
+
+.footer {
+  border-top: .125rem solid $gray-lighter; color: $gray-light; margin-top: 1.5rem; padding: .5rem 0 0;
+}
