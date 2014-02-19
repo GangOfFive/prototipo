@@ -118,7 +118,7 @@
         <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
     </div>
 
-    <div id="objetivo-paciente">
+    <div class="hidden" id="objetivo-paciente">
 
         <h2>Nuevo Objetivo</h2>
         <div class="row">
@@ -173,6 +173,91 @@
                 <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
             </div>
         </div>
+    </div>
+
+
+    <div id="nueva-receta">
+        <form class="form-horizontal" role="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Nueva Receta</h2>
+                    <div class="form-group">
+                        <label for="nombre" class="col-sm-3 control-label">Nombre</label>
+                        <div class="col-sm-9">
+                            <input placeholder="Arroz con Camarones" class="form-control" type="text" id="nombre">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="calorias" class="col-sm-3 control-label">Calorías</label>
+                        <div class="col-sm-9">
+                            <input placeholder="600" class="form-control" type="number" id="calorias">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="porciones" class="col-sm-3 control-label">Porciones</label>
+                        <div class="col-sm-9">
+                            <input placeholder="2" class="form-control" type="number" id="porciones">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion" class="col-sm-3 control-label">Descripción</label>
+                        <div class="col-sm-9">
+                            <input placeholder="Un sabroso platillo" class="form-control" type="text" id="descripcion">
+                            <p class="help-block">Una descripción corta de la receta.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instrucciones" class="col-sm-3 control-label">Preparación</label>
+                        <div class="col-sm-9">
+                            <textarea id="instrucciones" placeholder="" class="form-control"></textarea>
+                            <p class="help-block">Descripción de los pasos para preparar la receta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Foto</h3>
+                    <div class="form-group">
+                        <div class="col-sm-7">
+                            <img src="img/arroz-con-camarones.jpg" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-5">
+                            <input class="form-control" type="file" id="foto">
+                        </div>
+                    </div>
+                    <h3>Ingredientes</h3>
+                    <div id="ingredientes-receta" class="form-group">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-3 help-block">
+                                    Cantidad
+                                </div>
+                                <div class="col-xs-9 help-block">
+                                    Ingrediente
+                                </div>
+                            </div>
+                            <div class="fila-ingrediente row">
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" placeholder="2 tazas">
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" placeholder="arroz">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Crear Receta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <div class="footer">
