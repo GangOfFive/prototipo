@@ -113,7 +113,7 @@
         </ul>
     </div>
 
-    <div id="paciente-detalle" class="container">
+    <div id="paciente-detalle" class="container hidden">
         <div class="row">
             <div class="col-xs-4 col-sm-3 col-md-3">
                 <div class="paciente-foto-wrap">
@@ -201,7 +201,62 @@
                 <img src="http://d3js.org/ex/show-reel.png" alt=""/>
             </div>
         </div>
+    </div>
 
+    <div id="objetivo-paciente" class="hidden">
+        <h2>Nuevo Objetivo</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="objetivo" class="col-sm-2 control-label">Objetivo</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="objetivo"
+                                onchange="$('.objetivo-medida').text($(this).find('option:selected').attr('data-medida'));
+                                    $('.objetivo-val').val($(this).find('option:selected').attr('data-val'))">
+                                <option data-val="90" data-medida="kg">Peso</option>
+                                <option data-val="8" data-medida="%">Porcentaje de Grasa</option>
+                                <option data-val="60" data-medida="%">Porcentaje de Agua</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label for="objetivo" class="col-sm-2 control-label">Actual</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <input class="form-control objetivo-val" disabled value="90" type="text">
+                                <span class="objetivo-medida input-group-addon">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Meta</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <span class="objetivo-medida input-group-addon">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Mensaje</label>
+                        <div class="col-sm-10">
+                            <textarea placeholder="Opcional" class="form-control"></textarea>
+                            <p class="help-block">Este mensaje se mostrará al paciente cuando logre cumplir con el objetivo.</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Crear Objetivo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <img class="objetivo-img" src="img/award.png">
+                <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
