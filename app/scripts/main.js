@@ -21,4 +21,14 @@ $(function () {
             $newRow.insertAfter($lastRow);
         }
     });
+
+    // Nueva cita.
+    var $btnToggle = $('.btn-plan-toggle');
+    $btnToggle.click(function(e) {
+        $btnToggle.removeClass('btn-primary');
+        $(this).addClass('btn-primary');
+        $('.plan-nutricional-simple').slideToggle();
+        $('.plan-nutricional-extendido').slideToggle();
+        e.preventDefault();
+    });
 });
