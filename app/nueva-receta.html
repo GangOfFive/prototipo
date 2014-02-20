@@ -22,47 +22,7 @@
 <body>
 
 <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">SIMA</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pacientes <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Nuevo</a></li>
-                        <li><a href="#">Buscar</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Estadísticas</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Citas <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Nueva</a></li>
-                        <li><a href="#">Próximas</a></li>
-                        <li><a href="#">Calendarizar</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Retos</a></li>
-                <li><a href="#">Recetas</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Salir</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
+    <div id="nav"></div>
 
     <div id="nueva-receta">
         <form class="form-horizontal" role="form">
@@ -107,29 +67,6 @@
                         <div class="col-sm-9">
                             <textarea id="instrucciones" placeholder="" class="form-control"></textarea>
                             <p class="help-block">Descripción de los pasos para preparar la receta.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <h3>Ingredientes</h3>
-                    <div id="ingredientes-receta" class="form-group">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-xs-3 help-block">
-                                    Cantidad
-                                </div>
-                                <div class="col-xs-9 help-block">
-                                    Ingrediente
-                                </div>
-                            </div>
-                            <div class="fila-ingrediente row">
-                                <div class="col-xs-3">
-                                    <input type="text" class="form-control" placeholder="2 tazas">
-                                </div>
-                                <div class="col-xs-9">
-                                    <input type="text" class="form-control" placeholder="arroz">
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,6 +128,28 @@
                                 </div>
                                 <div class="col-xs-9">
                                     <input type="number" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Ingredientes</h3>
+                    <div id="ingredientes-receta" class="form-group">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-3 help-block">
+                                    Cantidad
+                                </div>
+                                <div class="col-xs-9 help-block">
+                                    Ingrediente
+                                </div>
+                            </div>
+                            <div class="fila-ingrediente row">
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" placeholder="2 tazas">
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" placeholder="arroz">
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,3 @@
-console.log('\'Allo \'Allo!');
-
 $(function () {
     for (var i = 0; i < 2; i++) {
         var $lastRow = $('#ingredientes-receta .fila-ingrediente:last-child')
@@ -30,5 +28,10 @@ $(function () {
         $('.plan-nutricional-simple').slideToggle();
         $('.plan-nutricional-extendido').slideToggle();
         e.preventDefault();
+    });
+
+    $("#nav").load('nav.html');
+    $("modal[src]").each(function () {
+        $(this).load($(this).attr("src"));
     });
 });

@@ -22,47 +22,7 @@
 <body>
 
 <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">SIMA</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="#">Inicio</a></li>
-                <li class="active dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pacientes <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Nuevo</a></li>
-                        <li><a href="#">Buscar</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Estadísticas</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Citas <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Nueva</a></li>
-                        <li><a href="#">Próximas</a></li>
-                        <li><a href="#">Calendarizar</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Retos</a></li>
-                <li><a href="#">Recetas</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Salir</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
+    <div id="nav"></div>
 
     <div id="crear-cita" class="container">
         <div class="row-fluid">
@@ -180,69 +140,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="agregar-objetivo" tabindex="-1" role="dialog" aria-labelledby="agregar-calorias" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Nuevo Objetivo</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-12">
-                            <form class="form-horizontal" role="form">
-                                <div class="form-group">
-                                    <label for="objetivo" class="col-sm-2 control-label">Objetivo</label>
-                                    <div class="col-sm-10">
-                                        <select class="form-control" id="objetivo"
-                                            onchange="$('.objetivo-medida').text($(this).find('option:selected').attr('data-medida'));
-                                                $('.objetivo-val').val($(this).find('option:selected').attr('data-val'))">
-                                            <option data-val="90" data-medida="kg">Peso</option>
-                                            <option data-val="8" data-medida="%">Porcentaje de Grasa</option>
-                                            <option data-val="60" data-medida="%">Porcentaje de Agua</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                 <div class="form-group">
-                                    <label for="objetivo" class="col-sm-2 control-label">Actual</label>
-                                    <div class="col-sm-10">
-                                        <div class="input-group">
-                                            <input class="form-control objetivo-val" disabled value="90" type="text">
-                                            <span class="objetivo-medida input-group-addon">kg</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-2 control-label">Meta</label>
-                                    <div class="col-sm-10">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="objetivo-medida input-group-addon">kg</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-2 control-label">Mensaje</label>
-                                    <div class="col-sm-10">
-                                        <textarea placeholder="Opcional" class="form-control"></textarea>
-                                        <p class="help-block">Este mensaje se mostrará al paciente cuando logre cumplir con el objetivo.</p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-sm-4 hidden-xs">
-                            <img class="objetivo-img" src="images/award.jpg">
-                            <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Nuevo Objetivo</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <modal src="modals/agregar-objetivo.html"></modal>
 
     <div class="footer">
         <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>

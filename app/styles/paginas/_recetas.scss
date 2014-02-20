@@ -1,0 +1,3 @@
+.table-recetas {
+    @extend .table, .table-striped, .table-bordered, .table-hover;
+}

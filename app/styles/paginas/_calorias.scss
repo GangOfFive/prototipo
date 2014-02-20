@@ -11,14 +11,14 @@
 }
 
 .table-calorias {
-    @extend .table, .table-hover, .table-border;
-    tr:first-child th {
+    @extend .table, .table-hover, .table-striped, .table-border;
+    thead:first-child tr th {
         border-top: 0;
     }
 }
 
 .table-listado-comida {
-    @extend .table, .table-border;
+    @extend .table, .table-hover, .table-striped, .table-border;
     td {
         vertical-align: middle !important;
     }
@@ -27,7 +27,7 @@
     }
 }
 
-.tabs-agregar-calorias, .tabs-registro-calorias {
+.tabs-agregar-calorias {
     .tab-pane {
         padding-top: 1rem;
     }

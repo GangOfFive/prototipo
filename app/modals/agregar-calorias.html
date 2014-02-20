@@ -1,0 +1,96 @@
+<div class="modal fade" id="agregar-calorias" tabindex="-1" role="dialog" aria-labelledby="agregar-calorias" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Agregar Alimentos</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#buscar-recetas" data-toggle="tab">Buscar</a></li>
+                    <li><a href="#ingresar-otro" data-toggle="tab">Otros</a></li>
+                </ul>
+
+                <div class="tabs-agregar-calorias tab-content">
+                    <div class="tab-pane active" id="buscar-recetas">
+                        <div class="buscar-receta input-group">
+                            <input id="buscar-receta" type="text" class="form-control input-sm" placeholder="Buscar Recetas...">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default btn-sm">Buscar</button>
+                            </span>
+                        </div>
+                        <table class="table-listado-comida">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Porciones</th>
+                                    <th>Receta</th>
+                                    <th>Calorías por Porción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-xs-1"><input type="checkbox"></td>
+                                    <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
+                                    <td>Nueces</td>
+                                    <td class="calorias">30</td>
+                                </tr><tr>
+                                    <td class="col-xs-1"><input type="checkbox"></td>
+                                    <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
+                                    <td>Crema de Espárragos</td>
+                                    <td class="calorias">150</td>
+                                </tr><tr>
+                                    <td class="col-xs-1"><input type="checkbox"></td>
+                                    <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
+                                    <td>Sándwich de Jamón y Queso</td>
+                                    <td class="calorias">270</td>
+                                </tr><tr>
+                                    <td class="col-xs-1"><input type="checkbox"></td>
+                                    <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
+                                    <td>Arroz con Leche</td>
+                                    <td class="calorias">200</td>
+                                </tr><tr>
+                                    <td class="col-xs-1"><input type="checkbox"></td>
+                                    <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
+                                    <td>Pan Tostado</td>
+                                    <td class="calorias">150</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tab-pane" id="ingresar-otro">
+                        <table class="table-listado-comida">
+                            <thead>
+                                <tr>
+                                    <th>Porciones</th>
+                                    <th>Descripción</th>
+                                    <th>Calorías por Porción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
+                                    <td><input class="form-control input-sm" type="text"></td>
+                                    <td class="calorias"><input class="form-control input-sm" type="number"></td>
+                                </tr><tr>
+                                    <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
+                                    <td><input class="form-control input-sm" type="text"></td>
+                                    <td class="calorias"><input class="form-control input-sm" type="number"></td>
+                                </tr><tr>
+                                    <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
+                                    <td><input class="form-control input-sm" type="text"></td>
+                                    <td class="calorias"><input class="form-control input-sm" type="number"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
