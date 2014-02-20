@@ -1,0 +1,183 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">SIMA</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pacientes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Nuevo</a></li>
+                        <li><a href="#">Buscar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Estadísticas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Citas <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Nueva</a></li>
+                        <li><a href="#">Próximas</a></li>
+                        <li><a href="#">Calendarizar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Retos</a></li>
+                <li><a href="#">Recetas</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="nueva-receta">
+        <form class="form-horizontal" role="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Nueva Receta</h2>
+                    <div class="form-group">
+                        <label for="nombre" class="col-sm-3 control-label">Nombre</label>
+                        <div class="col-sm-9">
+                            <input placeholder="Arroz con Camarones" class="form-control" type="text" id="nombre">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="calorias" class="col-sm-3 control-label">Calorías</label>
+                        <div class="col-sm-9">
+                            <input placeholder="600" class="form-control" type="number" id="calorias">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="porciones" class="col-sm-3 control-label">Porciones</label>
+                        <div class="col-sm-9">
+                            <input placeholder="2" class="form-control" type="number" id="porciones">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion" class="col-sm-3 control-label">Descripción</label>
+                        <div class="col-sm-9">
+                            <input placeholder="Un sabroso platillo" class="form-control" type="text" id="descripcion">
+                            <p class="help-block">Una descripción corta de la receta.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instrucciones" class="col-sm-3 control-label">Preparación</label>
+                        <div class="col-sm-9">
+                            <textarea id="instrucciones" placeholder="" class="form-control"></textarea>
+                            <p class="help-block">Descripción de los pasos para preparar la receta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Foto</h3>
+                    <div class="form-group">
+                        <div class="col-sm-7">
+                            <img src="images/arroz-con-camarones.jpg" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-5">
+                            <input class="form-control" type="file" id="foto">
+                        </div>
+                    </div>
+                    <h3>Ingredientes</h3>
+                    <div id="ingredientes-receta" class="form-group">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-3 help-block">
+                                    Cantidad
+                                </div>
+                                <div class="col-xs-9 help-block">
+                                    Ingrediente
+                                </div>
+                            </div>
+                            <div class="fila-ingrediente row">
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" placeholder="2 tazas">
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" placeholder="arroz">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Crear Receta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
+    </div>
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
