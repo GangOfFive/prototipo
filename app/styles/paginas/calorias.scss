@@ -1,0 +1,34 @@
+.info-calorias {
+    text-align: center;
+    strong {
+        font-size: 2rem;
+        display: block;
+    }
+}
+
+.buscar-receta {
+    margin-bottom: 1rem;
+}
+
+.table-calorias {
+    @extend .table, .table-hover, .table-border;
+    tr:first-child th {
+        border-top: 0;
+    }
+}
+
+.table-listado-comida {
+    @extend .table, .table-border;
+    td {
+        vertical-align: middle !important;
+    }
+    .calorias {
+        text-align: right;
+    }
+}
+
+.tabs-agregar-calorias, .tabs-registro-calorias {
+    .tab-pane {
+        padding-top: 1rem;
+    }
+}
