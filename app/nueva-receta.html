@@ -67,12 +67,19 @@
     <div id="nueva-receta">
         <form class="form-horizontal" role="form">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <h2>Nueva Receta</h2>
                     <div class="form-group">
                         <label for="nombre" class="col-sm-3 control-label">Nombre</label>
                         <div class="col-sm-9">
                             <input placeholder="Arroz con Camarones" class="form-control" type="text" id="nombre">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="foto" class="col-sm-3 control-label">Foto</label>
+                        <div class="col-sm-9">
+                            <img src="images/arroz-con-camarones.jpg" class="img-thumbnail">
+                            <input class="form-control" type="file" id="foto">
                         </div>
                     </div>
                     <div class="form-group">
@@ -103,16 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h3>Foto</h3>
-                    <div class="form-group">
-                        <div class="col-sm-7">
-                            <img src="images/arroz-con-camarones.jpg" class="img-thumbnail">
-                        </div>
-                        <div class="col-sm-5">
-                            <input class="form-control" type="file" id="foto">
-                        </div>
-                    </div>
+                <div class="col-md-5">
                     <h3>Ingredientes</h3>
                     <div id="ingredientes-receta" class="form-group">
                         <div class="col-sm-12">
@@ -135,14 +133,73 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-10">
-                            <button type="submit" class="btn btn-primary">Crear Receta</button>
+                <div class="col-md-5">
+                    <h3>Valor Nutricional</h3>
+                    <div id="nutricional-receta" class="form-group">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-xs-3 help-block">
+                                    Nombre
+                                </div>
+                                <div class="col-xs-9 help-block">
+                                    Valor
+                                </div>
+                            </div>
+                            <div class="fila-nutricional row">
+                                <div class="col-xs-3">
+                                    <p class="form-control-static">Carbohidratos</p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="fila-nutricional row">
+                                <div class="col-xs-3">
+                                    <p class="form-control-static">Proteínas</p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="fila-nutricional row">
+                                <div class="col-xs-3">
+                                    <p class="form-control-static">Vegetales</p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="fila-nutricional row">
+                                <div class="col-xs-3">
+                                    <p class="form-control-static">Grasas</p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="fila-nutricional row">
+                                <div class="col-xs-3">
+                                    <p class="form-control-static">Frutas</p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="fila-nutricional row">
+                                <div class="col-xs-3">
+                                    <p class="form-control-static">Agua</p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="submit" class="pull-right btn btn-primary">Crear Receta</button>
                 </div>
             </div>
         </form>
