@@ -1,0 +1,279 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+    <div id="nav"></div>
+
+    <div id="crear-cita" class="container">
+        <h1>Nuevo paciente</h1>
+
+        <form role="form" class="crear-paciente-form">
+            <h3>Información básica</h3>
+            <div class="row">
+                <div class="col-xs-4">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre"/>
+                </div>
+                <div class="col-xs-4">
+                    <label for="">Primer apellido</label>
+                    <input type="text" class="form-control" placeholder="Primer apellido"/>
+                </div><div class="col-xs-4">
+                    <label for="">Segundo apellido</label>
+                    <input type="text" class="form-control" placeholder="Segundo apellido"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" placeholder="email"/>
+                </div>
+                <div class="col-xs-6">
+                    <label for="">Telefono</label>
+                    <input type="tel" class="form-control" placeholder="0000-000"/>
+                </div>
+            </div>
+            <h3>Información detallada</h3>
+            <div class="row">
+                <div class="col-xs-6">
+                    <label>Historial médico</label>
+                    <textarea class="form-control" rows="8" ></textarea>
+                </div>
+                <div class="col-xs-6 tag-cloud">
+                    <label style="width: 100%;">Características</label>
+                    <span class="categoria-tag hipertenso-tag"><span class="glyphicon glyphicon-check"></span> hipertenso</span>
+                    <span class="categoria-tag no-lactosa-tag">no lactosa</span>
+                    <span class="categoria-tag no-glutten-tag">no glutten</span>
+                    <span class="categoria-tag vegano-tag"><span class="glyphicon glyphicon-check"></span> vegano</span>
+                    <span class="categoria-tag vegetariano-tag">vegetariano</span>
+                    <span class="categoria-tag diabetico-tag">diabetico</span>
+                </div>
+            </div>
+        </form>
+
+        <div class="row-fluid">
+
+            <!--<div class="cita-anterior-detalles col-xs-3 col-sm-3 col-md-3">-->
+                <!--<div class="perfil-paciente-datos-wrap">-->
+                    <!--<img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>-->
+                    <!--<p class="lista-categorias"><span class="categoria-tag hipertenso-tag">hipertenso</span> <span class="categoria-tag vegano-tag">vegano</span></p>-->
+                    <!--<h3>Cita anterior</h3>-->
+                    <!--<ul class="perfil-paciente-datos">-->
+                        <!--<li><span class="dato-definicion">Hace</span> 30 días</li>-->
+                        <!--<li><span class="dato-definicion">Peso</span> 75kg</li>-->
+                        <!--<li><span class="dato-definicion">Meta</span> 6kg</li>-->
+                        <!--<li><span class="dato-definicion">IMC</span> 30%</li>-->
+                        <!--<li><span class="dato-definicion">Agua</span> 40%</li>-->
+                        <!--<li><span class="dato-definicion">Medidas</span> <br/>25cm | 30cm | 50cm</li>-->
+                        <!--<li><span class="dato-definicion">Objetivo</span> <br/>reducir 2% de grasa corporal.</li>-->
+                        <!--<li><span class="dato-definicion">Recomendaciones</span> <br/>incrementar ejercicio.</li>-->
+                        <!--<li><span class="dato-definicion">Notas</span> <br/>quiere correr pero le duelen las rodillas.</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="cita-actual-detalles col-xs-9 col-sm-9 col-md-9">-->
+                <!--<h3><span class="glyphicon glyphicon-pencil"></span> Datos</h3>-->
+                <!--<form role="form">-->
+                    <!--<div class="form-group">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-xs-8">-->
+                                <!--<label>Nuevo Peso</label>-->
+                                <!--<input type="number" class="form-control" placeholder="Nuevo Peso">-->
+                            <!--</div>-->
+                            <!--<div class="col-xs-4">-->
+                                <!--<label>Altura</label>-->
+                                <!--<input type="number" class="form-control" placeholder="1.79cm">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label>Medidas en cm</label>-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-xs-4">-->
+                                <!--<label>Pecho</label>-->
+                                <!--<input type="number" class="form-control" placeholder="Pecho">-->
+                            <!--</div>-->
+                            <!--<div class="col-xs-4">-->
+                                <!--<label>Cintura</label>-->
+                                <!--<input type="number" class="form-control" placeholder="Cintura">-->
+                            <!--</div>-->
+                            <!--<div class="col-xs-4">-->
+                                <!--<label>Circunferencia</label>-->
+                                <!--<input type="number" class="form-control" placeholder="Circunferencia">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<h3>Archivos</h3>-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-xs-6">-->
+                                <!--<label><span class="glyphicon glyphicon-camera"></span> Fotos</label>-->
+                                <!--<input type="file">-->
+                            <!--</div>-->
+                            <!--<div class="col-xs-6">-->
+                                <!--<label><span class="glyphicon glyphicon-file"></span> Archivos adjuntos</label>-->
+                                <!--<input type="file">-->
+                                <!--<h5>Actuales</h5>-->
+                                <!--<ul class="archivos-adjuntos">-->
+                                    <!--<li>como-correr-facil.pdf</li>-->
+                                    <!--<li>introduccion-al-ejercicio.pdf</li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<h3><span class="glyphicon glyphicon-stats"></span> Estadísticas</h3>-->
+                    <!--<table class="table table-striped table-bordered table-hover">-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th>Item</th>-->
+                            <!--<th>Cita anterior</th>-->
+                            <!--<th>Histórico</th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr>-->
+                            <!--<td>IMC</td>-->
+                            <!--<td><span class="estadistica-positiva">29,5% ✓</span></td>-->
+                            <!--<td><span class="estadistica-positiva">-2,1% ✓</span></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>Porcentaje Agua</td>-->
+                            <!--<td><span class="estadistica-positiva">41,2% ✓</span></td>-->
+                            <!--<td><span class="estadistica-negativa">41,2% ✗</span></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>Porcentaje Grasa</td>-->
+                            <!--<td><span class="estadistica-negativa">11,2% ✗</span></td>-->
+                            <!--<td><span class="estadistica-negativa">9,2% ✗</span></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>Metalismo basal</td>-->
+                            <!--<td><span class="estadistica-positiva">+1,3% ✓</span></td>-->
+                            <!--<td><span class="estadistica-positiva">+3,2% ✓</span></td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+
+                        <!--<div class="form-group">-->
+                            <!--<h3><span class="glyphicon glyphicon-cutlery"></span> Plan nutricional-->
+                                <!--<div class="btn-group">-->
+                                    <!--<button class="btn btn-primary btn-xs btn-plan-toggle btn-plan-simple">simple</button>-->
+                                    <!--<button class="btn btn-default btn-xs btn-plan-toggle btn-plan-extendido">extendido</button>-->
+                                <!--</div>-->
+                            <!--</h3>-->
+
+                            <!--<div class="row plan-nutricional-simple">-->
+                                <!--<div class="col-xs-9">-->
+                                    <!--<label>Calorias</label>-->
+                                    <!--<input type="number" class="form-control" placeholder="Calorias">-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-3">-->
+                                    <!--<label>&NonBreakingSpace;</label>-->
+                                    <!--<button class="btn btn-success form-control" data-toggle="modal" data-target="#agregar-objetivo">Objetivo</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <!--<div class="plan-nutricional-extendido" style="display: none;">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-xs-3">-->
+                                        <!--<label for="">Carbohidratos</label>-->
+                                        <!--<input type="number" class="form-control" placeholder="Carbohidratos">-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-3">-->
+                                        <!--<label for="">Proteinas</label>-->
+                                        <!--<input type="number" class="form-control" placeholder="Proteinas">-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-3">-->
+                                        <!--<label for="">Vegetales</label>-->
+                                        <!--<input type="number" class="form-control" placeholder="Vegetales">-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-3">-->
+                                        <!--<label>&NonBreakingSpace;</label>-->
+                                        <!--<button class="btn btn-success form-control" data-toggle="modal" data-target="#agregar-objetivo">Objetivo</button>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-xs-3">-->
+                                        <!--<label for="">Grasas</label>-->
+                                        <!--<input type="number" class="form-control" placeholder="Grasas">-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-3">-->
+                                        <!--<label for="">Frutas</label>-->
+                                        <!--<input type="number" class="form-control" placeholder="Frutas">-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-3">-->
+                                        <!--<label for="">Agua</label>-->
+                                        <!--<input type="number" class="form-control" placeholder="Agua">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="exampleInputFile">Notas</label>-->
+                        <!--<textarea name="test" class="form-control" rows="3"></textarea>-->
+                    <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="exampleInputFile">Recomendaciones</label>-->
+                            <!--<textarea name="test" class="form-control" rows="3"></textarea>-->
+                        <!--</div>-->
+                    <!--<button type="submit" class="btn btn-primary btn-lg pull-right">Registrar</button>-->
+                <!--</form>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+    <div class="footer">
+        <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
+    </div>
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
