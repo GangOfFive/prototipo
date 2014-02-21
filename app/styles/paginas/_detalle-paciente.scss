@@ -2,7 +2,7 @@
 .perfil-paciente-img {
   @include inline-block(top);
   @include border-radius(50%);
-  max-width: 16rem;
+  max-width: 100%;
 }
 
 .perfil-paciente-info {

@@ -26,14 +26,14 @@
 
     <div id="crear-cita" class="container">
         <div class="row-fluid">
-            <h1>Nueva cita <small>Gerardo Parajeles</small></h1>
+            <h1>Nueva cita <br/><small>Gerardo Parajeles</small></h1>
 
-            <div class="cita-anterior-detalles col-xs-3 col-sm-3 col-md-3">
+            <div class="cita-anterior-detalles col-xs-12 col-md-3">
                 <div class="perfil-paciente-datos-wrap">
                     <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
                     <p class="lista-categorias"><span class="categoria-tag hipertenso-tag">hipertenso</span> <span class="categoria-tag vegano-tag">vegano</span></p>
-                    <h3>Cita anterior</h3>
-                    <ul class="perfil-paciente-datos">
+                    <h3 class="hidden-xs"> Cita anterior</h3>
+                    <ul class="hidden-xs perfil-paciente-datos">
                         <li><span class="dato-definicion">Hace</span> 30 días</li>
                         <li><span class="dato-definicion">Peso</span> 75kg</li>
                         <li><span class="dato-definicion">Meta</span> 6kg</li>
@@ -47,16 +47,16 @@
                 </div>
             </div>
 
-            <div class="cita-actual-detalles col-xs-9 col-sm-9 col-md-9">
+            <div class="cita-actual-detalles col-xs-12 col-md-9">
                 <h3><span class="glyphicon glyphicon-pencil"></span> Datos</h3>
                 <form role="form">
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-xs-8">
+                            <div class="col-xs-6 col-md-8">
                                 <label>Nuevo Peso</label>
                                 <input type="number" class="form-control" placeholder="Nuevo Peso">
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-6 col-md-4">
                                 <label>Altura</label>
                                 <input type="number" class="form-control" placeholder="1.79cm">
                             </div>
@@ -65,28 +65,28 @@
                     <div class="form-group">
                         <label>Medidas en cm</label>
                         <div class="row">
-                            <div class="col-xs-4">
+                            <div class="col-xs-6 col-md-4">
                                 <label>Pecho</label>
                                 <input type="number" class="form-control" placeholder="Pecho">
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-6 col-md-4">
                                 <label>Cintura</label>
                                 <input type="number" class="form-control" placeholder="Cintura">
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-6 col-md-4">
                                 <label>Circunferencia</label>
                                 <input type="number" class="form-control" placeholder="Circunferencia">
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group hidden-xs">
                         <h3>Archivos</h3>
                         <div class="row">
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-md-6">
                                 <label><span class="glyphicon glyphicon-camera"></span> Fotos</label>
                                 <input type="file">
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-md-6">
                                 <label><span class="glyphicon glyphicon-file"></span> Archivos adjuntos</label>
                                 <input type="file">
                                 <h5>Actuales</h5>
@@ -140,11 +140,11 @@
                             </h3>
 
                             <div class="row plan-nutricional-simple">
-                                <div class="col-xs-9">
+                                <div class="col-xs-12 col-md-9">
                                     <label>Calorias</label>
                                     <input type="number" class="form-control" placeholder="Calorias">
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-12 col-md-3 pull-right">
                                     <label>&NonBreakingSpace;</label>
                                     <button class="btn btn-success form-control" data-toggle="modal" data-target="#agregar-objetivo">Objetivo</button>
                                 </div>
@@ -152,35 +152,35 @@
 
                             <div class="plan-nutricional-extendido" style="display: none;">
                                 <div class="row">
-                                    <div class="col-xs-3">
+                                    <div class="col-xs-6 col-md-3 ">
                                         <label for="">Carbohidratos</label>
                                         <input type="number" class="form-control" placeholder="Carbohidratos">
                                     </div>
-                                    <div class="col-xs-3">
+                                    <div class="col-xs-6 col-md-3 ">
                                         <label for="">Proteinas</label>
                                         <input type="number" class="form-control" placeholder="Proteinas">
                                     </div>
-                                    <div class="col-xs-3">
+                                    <div class="col-xs-6 col-md-3 ">
                                         <label for="">Vegetales</label>
                                         <input type="number" class="form-control" placeholder="Vegetales">
                                     </div>
-                                    <div class="col-xs-3">
-                                        <label>&NonBreakingSpace;</label>
-                                        <button class="btn btn-success form-control" data-toggle="modal" data-target="#agregar-objetivo">Objetivo</button>
-                                    </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-xs-3">
+                                    <div class="col-xs-6 col-md-3 ">
                                         <label for="">Grasas</label>
                                         <input type="number" class="form-control" placeholder="Grasas">
                                     </div>
-                                    <div class="col-xs-3">
+                                    <div class="col-xs-6 col-md-3 ">
                                         <label for="">Frutas</label>
                                         <input type="number" class="form-control" placeholder="Frutas">
                                     </div>
-                                    <div class="col-xs-3">
+                                    <div class="col-xs-6 col-md-3 ">
                                         <label for="">Agua</label>
                                         <input type="number" class="form-control" placeholder="Agua">
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                        <label>&NonBreakingSpace;</label>
+                                        <button class="btn btn-success form-control" data-toggle="modal" data-target="#agregar-objetivo">Objetivo</button>
                                     </div>
                                 </div>
                             </div>

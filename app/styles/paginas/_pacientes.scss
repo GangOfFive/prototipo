@@ -1,8 +1,23 @@
-.btn-paciente-nuevo {
-  float: right;
+.tabla-pacientes-lista {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.table-top-form {
-  padding-left: 0;
-  padding-right: 0;
+.pacientes-pagination {
+  margin-top: 1rem;
+}
+
+.busqueda-pacientes-form {
+    margin-bottom: 1rem;
+}
+
+.lista-pacientes {
+  max-height: 400px;
+  overflow-x: auto;
+
+  .perfil-paciente-info {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $gray-light;
+  }
 }

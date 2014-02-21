@@ -20,3 +20,11 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 .footer {
   border-top: .125rem solid $gray-lighter; color: $gray-light; margin-top: 1.5rem; padding: .5rem 0 0;
 }
+
+.form-control {
+  height: 37px;
+}
+
+img {
+  max-width: 100%;
+}
