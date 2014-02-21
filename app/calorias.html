@@ -36,8 +36,18 @@
         <div class="row">
             <div class="col-sm-8">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#calorias-comida" data-toggle="tab">Comida</a></li>
-                    <li><a href="#calorias-ejercicio" data-toggle="tab">Ejercicio</a></li>
+                    <li class="active">
+                        <a href="#calorias-comida" data-toggle="tab">
+                            <span class="glyphicon glyphicon-cutlery"></span>
+                            Comida
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#calorias-ejercicio" data-toggle="tab">
+                            <span class="glyphicon glyphicon-fire"></span>
+                            Ejercicio
+                        </a>
+                    </li>
                 </ul>
 
                 <div class="tabs-registro-calorias tab-content">
@@ -130,25 +140,29 @@
                     </div>
 
                     <div class="tab-pane" id="calorias-ejercicio">
-
                         <table class="table-calorias">
-                            <tr>
-                                <th>
-                                    Ejercicio Realizado
-                                    <button data-toggle="modal" data-target="#agregar-ejercicio" class="btn btn-xs btn-success">
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                        Agregar
-                                    </button>
-                                </th><th>
-                                    Calorías Quemadas
-                                </th>
-                            </tr><tr>
-                                <td>Spinning</td>
-                                <td>500</td>
-                            </tr><tr>
-                                <td>Insanity</td>
-                                <td>1000</td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Ejercicio Realizado
+                                        <button data-toggle="modal" data-target="#agregar-ejercicio" class="btn btn-xs btn-success">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            Agregar
+                                        </button>
+                                    </th><th>
+                                        Calorías Quemadas
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Spinning</td>
+                                    <td>500</td>
+                                </tr><tr>
+                                    <td>Insanity</td>
+                                    <td>1000</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
 

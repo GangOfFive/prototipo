@@ -38,11 +38,37 @@
 .categoria-tag {
   @include inline-block;
   padding: 1px 3px;
-  background: $brand-success;
   color: $component-active-color;
   border-radius: $border-radius-small;
+  font-weight: bold;
+}
+
+.hipertenso-tag {
+  background: #2E8F94;
+}
+
+.vegetariano-tag {
+  background: #2E943D;
 }
 
 .vegano-tag {
-  background: $brand-info;
+  background: #ECA918;
+}
+
+.diabetico-tag {
+  background: #CC63A9;
+}
+
+.nogluten-tag {
+  background: #B77A3D;
+}
+
+.nolactosa-tag {
+  background: #6C8DA9;;
+}
+
+.tag-dropdown {
+    .categoria-tag {
+        margin-left: 4px;
+    }
 }
