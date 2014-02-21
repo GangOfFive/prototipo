@@ -1,6 +1,8 @@
 .table-recetas {
     @extend .table, .table-bordered, .table-hover;
 
+    margin-top: 4px;
+
     .active {
         font-weight: bold;
     }

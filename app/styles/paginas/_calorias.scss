@@ -11,14 +11,14 @@
 }
 
 .table-calorias {
-    @extend .table, .table-hover, .table-striped, .table-border;
+    @extend .table, .table-hover, .table-striped;
     thead:first-child tr th {
         border-top: 0;
     }
 }
 
 .table-listado-comida {
-    @extend .table, .table-hover, .table-striped, .table-border;
+    @extend .table, .table-hover, .table-striped;
     td {
         vertical-align: middle !important;
     }

@@ -29,14 +29,33 @@
 
         <div class="row">
             <div class="col-md-5">
-                <div class="input-group custom-search-form">
-                    <input type="text" class="form-control">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
+
+                <div class="buscar-recetas">
+                    <div class="input-group">
+                        <input placeholder="Buscar por nombre o ingredientes..." type="text" class="input-sm form-control">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                                Buscar
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu tag-dropdown" role="menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-check"></span><span class="categoria-tag hipertenso-tag">hipertenso</span></a></li>
+                                <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag vegetariano-tag">vegetariano</span></a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-check"></span><span class="categoria-tag diabetico-tag">diabético</span></a></li>
+                                <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag vegano-tag">vegano</span></a></li>
+                                <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag nogluten-tag">no gluten</span></a></li>
+                                <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag nolactosa-tag">no lactosa</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
+
                 <table class="table-recetas">
                     <thead>
                         <tr>
@@ -82,34 +101,40 @@
                 </ul>
             </div>
             <div class="col-md-7 detalle-receta">
-                <h3>Arroz con Camarones</h3>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img src="images/arroz-con-camarones.jpg" class="img-thumbnail">
-                        <ul class="lista-ingredientes">
-                            <li>2 libras de camarones</li>
-                            <li>4 dientes de ajo</li>
-                            <li>2 cucharadas de aceite</li>
-                            <li>3 cucharadas de mantequilla</li>
-                            <li>2 tazas de arroz</li>
-                            <li>3 tomates</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4>Información Nutricional</h4>
-                        <ul>
-                            <li>Carbohidratos: 1</li>
-                            <li>Proteínas: 1</li>
-                            <li>Vegtales: 1</li>
-                            <li>Grasas: 2</li>
-                            <li>Frutas: 0</li>
-                            <li>Agua: 0</li>
-                        </ul>
+                <div class="well">
+                    <h3>
+                        Arroz con Camarones
+                        <small>6 porciones</small>
+                        <a class="btn btn-sm btn-primary pull-right" href="nueva-receta.phtml">Editar</a>
+                    </h3>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <img src="images/arroz-con-camarones.jpg" class="img-thumbnail">
+                            <ul class="lista-ingredientes">
+                                <li>2 libras de camarones</li>
+                                <li>2 dientes de ajo</li>
+                                <li>2 cucharadas de aceite</li>
+                                <li>3 cucharadas de mantequilla</li>
+                                <li>2 tazas de arroz</li>
+                                <li>3 tomates</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-7">
+                            <h4>Información Nutricional</h4>
+                            <ul>
+                                <li>Carbohidratos: 1</li>
+                                <li>Proteínas: 1</li>
+                                <li>Vegetales: 1</li>
+                                <li>Grasas: 2</li>
+                                <li>Frutas: 0</li>
+                                <li>Agua: 0</li>
+                            </ul>
 
-                        <h4>Preparación</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla condimentum tellus, ut aliquam lorem varius ac. Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla condimentum tellus, ut aliquam lorem varius ac. Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla condimentum tellus, ut aliquam lorem varius ac. Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
+                            <h4>Preparación</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla condimentum tellus, ut aliquam lorem varius ac. Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla condimentum tellus, ut aliquam lorem varius ac. Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla condimentum tellus, ut aliquam lorem varius ac. Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
+                        </div>
                     </div>
                 </div>
             </div>
