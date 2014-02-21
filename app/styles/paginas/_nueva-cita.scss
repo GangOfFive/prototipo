@@ -14,7 +14,7 @@
 
 .cita-anterior-detalles {
   img {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
@@ -22,4 +22,16 @@
   .row {
     margin-bottom: 1rem;
   }
+}
+
+.cita-nueva-estadisticas {
+  font-size: 16px;
+}
+
+.estadistica-positiva {
+  color: $brand-success;
+}
+
+.estadistica-negativa {
+  color: $brand-warning;
 }
