@@ -20,14 +20,25 @@ $(function () {
         }
     });
 
+    // Nueva receta.
+    var $btnToggleReceta = $('.btn-info-nutricional-toggle');
+    $btnToggleReceta.click(function(e) {
+        e.preventDefault();
+        if ($(this).is('.btn-primary')) return;
+        $btnToggleReceta.removeClass('btn-primary');
+        $(this).addClass('btn-primary');
+        $('#nutricional-receta,#calorias-receta').slideToggle();
+    });
+
     // Nueva cita.
     var $btnToggle = $('.btn-plan-toggle');
     $btnToggle.click(function(e) {
+        e.preventDefault();
+        if ($(this).is('.btn-primary')) return;
         $btnToggle.removeClass('btn-primary');
         $(this).addClass('btn-primary');
         $('.plan-nutricional-simple').slideToggle();
         $('.plan-nutricional-extendido').slideToggle();
-        e.preventDefault();
     });
 
     $("#nav").load('nav.html');
