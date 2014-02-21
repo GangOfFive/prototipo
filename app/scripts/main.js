@@ -45,4 +45,6 @@ $(function () {
     $("modal[src]").each(function () {
         $(this).load($(this).attr("src"));
     });
+
+    $('[title]').tooltip();
 });

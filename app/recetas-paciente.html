@@ -38,18 +38,6 @@
                                 <span class="glyphicon glyphicon-search"></span>
                                 Buscar
                             </button>
-                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu tag-dropdown" role="menu">
-                                <li><a href="#"><span class="glyphicon glyphicon-check"></span><span class="categoria-tag hipertenso-tag">hipertenso</span></a></li>
-                                <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag vegetariano-tag">vegetariano</span></a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-check"></span><span class="categoria-tag diabetico-tag">diabético</span></a></li>
-                                <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag vegano-tag">vegano</span></a></li>
-                                <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag nogluten-tag">no gluten</span></a></li>
-                                <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag nolactosa-tag">no lactosa</span></a></li>
-                            </ul>
                         </div>
                     </div>
 
@@ -102,11 +90,18 @@
             </div>
             <div class="col-md-7 detalle-receta">
                 <div class="well">
-                    <h3>
-                        Arroz con Camarones
-                        <small>6 porciones</small>
-                        <a class="btn btn-sm btn-primary col-sm-2 col-xs-12 pull-right" href="nueva-receta.phtml">Editar</a>
-                    </h3>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3>
+                                Arroz con Camarones
+                                <small>6 porciones</small>
+                                <a data-toggle="tooltip" data-placement="top" title="Agregar al Registro de Calorías" class="btn btn-sm btn-primary col-sm-3 col-xs-12 pull-right" href="calorias.html">
+                                    <span class="glyphicon glyphicon-cutlery"></span>
+                                    Comí Esto
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-5">
                             <img src="images/arroz-con-camarones.jpg" class="img-thumbnail">
