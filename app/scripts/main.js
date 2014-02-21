@@ -20,6 +20,15 @@ $(function () {
         }
     });
 
+    // Nueva receta.
+    var $btnToggleReceta = $('.btn-info-nutricional-toggle');
+    $btnToggleReceta.click(function(e) {
+        $btnToggleReceta.removeClass('btn-primary');
+        $(this).addClass('btn-primary');
+        $('#nutricional-receta,#calorias-receta').slideToggle();
+        e.preventDefault();
+    });
+
     // Nueva cita.
     var $btnToggle = $('.btn-plan-toggle');
     $btnToggle.click(function(e) {

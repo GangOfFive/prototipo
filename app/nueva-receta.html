@@ -43,12 +43,6 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="calorias" class="col-sm-3 control-label">Calorías</label>
-                        <div class="col-sm-9">
-                            <input placeholder="600" class="form-control" type="number" id="calorias">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="porciones" class="col-sm-3 control-label">Porciones</label>
                         <div class="col-sm-9">
                             <input placeholder="2" class="form-control" type="number" id="porciones">
@@ -71,8 +65,22 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <h3>Valor Nutricional</h3>
-                    <div id="nutricional-receta" class="form-group">
+                    <h3>
+                        Información Nutricional
+                        <div class="btn-group">
+                            <button class="btn btn-primary btn-xs btn-info-nutricional-toggle">simple</button>
+                            <button class="btn btn-default btn-xs btn-info-nutricional-toggle">extendida</button>
+                        </div>
+                    </h3>
+
+                    <div id="calorias-receta" class="form-group">
+                        <label for="calorias" class="col-sm-3 control-label">Calorías</label>
+                        <div class="col-sm-9">
+                            <input placeholder="600" class="form-control" type="number" id="calorias">
+                        </div>
+                    </div>
+
+                    <div id="nutricional-receta" class="form-group" style="display: none;">
                         <div class="col-sm-12">
                             <div class="row">
                                 <div class="col-xs-3 help-block">
