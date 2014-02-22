@@ -50,5 +50,33 @@ $(function () {
         $(this).load($(this).attr('src'));
     });
 
+    $('#btn-agregar-paciente').click(function() {
+        $('#paciente-nuevo-form').slideToggle();
+        $('#tipo-paciente-wrap').slideToggle();
+    });
+
+    $('#btn-paciente-existente').click(function() {
+        $('#paciente-existente-form').slideToggle();
+        $('#tipo-paciente-wrap').slideToggle();
+    });
+
+    $('#datetimepicker1').datetimepicker({
+        useSeconds: false,
+        startDate: 3/3/2015,
+        pickTime: false
+    }).on('change.dp', function(evt) {
+        var fecha = $(this).data('DateTimePicker').getDate();
+            if ($('#fecha').val()) {
+                $('#citas-para-fecha').slideDown();
+                $('#fechaSeleccionada').text(fecha.format('DD [de] MMMM [del] YYYY'));
+            }
+    });
+
+    $('#datetimepicker2').datetimepicker({
+        useSeconds: false,
+        minuteStepping: 15,
+        pickDate: false
+    });
+
     $('[title]').tooltip();
 });

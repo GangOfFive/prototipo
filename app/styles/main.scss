@@ -2,6 +2,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import "bootstrap-theme";
 @import "sass-bootstrap/lib/bootstrap";
+@import "/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css";
 @import "compass";
 
 @import "paginas/detalle-paciente";

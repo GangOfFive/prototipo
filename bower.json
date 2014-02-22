@@ -3,7 +3,9 @@
   "private": true,
   "dependencies": {
     "sass-bootstrap": "~3.0.0",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "eonasdan-bootstrap-datetimepicker": "~2.1.30",
+    "momentjs": "~2.5.1"
   },
   "devDependencies": {}
 }
