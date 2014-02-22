@@ -1,0 +1,24 @@
+.carousel {
+  background: #333;
+
+  .item {
+    text-align: center;
+  }
+  p {
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    background: rgba(#000, .7);
+    padding: 5px 0;
+    color: #fff;
+  }
+}
+.carousel-inner > .item > img {
+  display: inline-block;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}

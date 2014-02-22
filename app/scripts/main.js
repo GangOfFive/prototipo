@@ -60,23 +60,27 @@ $(function () {
         $('#tipo-paciente-wrap').slideToggle();
     });
 
-    $('#datetimepicker1').datetimepicker({
-        useSeconds: false,
-        startDate: 3/3/2015,
-        pickTime: false
-    }).on('change.dp', function(evt) {
-        var fecha = $(this).data('DateTimePicker').getDate();
-            if ($('#fecha').val()) {
-                $('#citas-para-fecha').slideDown();
-                $('#fechaSeleccionada').text(fecha.format('DD [de] MMMM [del] YYYY'));
-            }
-    });
+    if ($('#datetimepicker1').length && $('#datetimepicker2').length) {
+        $('#datetimepicker1').datetimepicker({
+            useSeconds: false,
+            defaultDate: '3/3/2014',
+            pickTime: false
+        }).on('change.dp', function() {
+                var fecha = $(this).data('DateTimePicker').getDate();
 
-    $('#datetimepicker2').datetimepicker({
-        useSeconds: false,
-        minuteStepping: 15,
-        pickDate: false
-    });
+                if ($('#fecha').val()) {
+                    $('#citas-para-fecha').slideDown();
+                    $('#fechaSeleccionada').text(fecha.format('DD [de] MMMM [del] YYYY'));
+                }
+        });
+
+        $('#datetimepicker2').datetimepicker({
+            useSeconds: false,
+            minuteStepping: 15,
+            pick12HourFormat: true,
+            pickDate: false
+        });
+    }
 
     $('[title]').tooltip();
 });

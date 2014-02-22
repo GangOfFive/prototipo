@@ -23,12 +23,12 @@
 <div class="container">
     <div id="nav"></div>
 
-    <div id="crear-cita" class="container">
+    <div id="crear-cita" class="crear-cita-container container">
         <h1>Calendarizar cita</h1>
 
         <div id="fecha-well">
             <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-md-4">
                 <h3>Seleccione la fecha</h3>
                 <div class='input-group date' id='datetimepicker1'>
                     <input type='text' class="form-control" id="fecha" placeholder="Seleccione la fecha" />
@@ -42,7 +42,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-xs-8" id="citas-para-fecha" style="display: none">
+            <div class="col-xs-12 col-md-8" id="citas-para-fecha" style="display: none">
                 <h3>Citas para el <span id="fechaSeleccionada"></span>:</h3>
                 <table class="table table-striped tabla-lista-citas">
                     <thead>
@@ -77,9 +77,9 @@
             </div>
         </h2>
         <div class="row" id="tipo-paciente-wrap">
-            <div class="col-xs-6">
+            <div class="col-xs-12 col-md-6">
                 <div class="hero-widget well well-sm">
-                    <div class="icon">
+                    <div class="icon hidden-xs">
                         <i class="glyphicon glyphicon-user"></i>
                     </div>
                     <div class="text">
@@ -90,9 +90,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-12 col-md-6">
                 <div class="hero-widget well well-sm">
-                    <div class="icon">
+                    <div class="icon hidden-xs">
                         <i class="glyphicon glyphicon-search"></i>
                     </div>
                     <div class="text">
@@ -109,25 +109,25 @@
             <form role="form" id="paciente-nuevo-form" style="display: none;" class="crear-cita-form">
                 <h3>Paciente nuevo</h3>
                 <div class="row">
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-3">
                         <label for="">Nombre</label>
                         <input type="text" class="form-control" placeholder="Nombre"/>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-3">
                         <label for="">Primer apellido</label>
                         <input type="text" class="form-control" placeholder="Primer apellido"/>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-3">
                         <label for="">Segundo apellido</label>
                         <input type="text" class="form-control" placeholder="Segundo apellido"/>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-md-3">
                         <label for="">Email</label>
                         <input type="email" class="form-control" placeholder="email"/>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-md-3">
                         <label for="">Telefono</label>
                         <input type="tel" class="form-control" placeholder="0000-000"/>
                     </div>
@@ -135,11 +135,11 @@
                 <div class="hidden">
                     <h3>Información detallada</h3>
                     <div class="row">
-                        <div class="col-xs-6">
+                        <div class="col-xs-12 col-md-6">
                             <label>Historial médico</label>
                             <textarea class="form-control" rows="8" ></textarea>
                         </div>
-                        <div class="col-xs-6 tag-cloud">
+                        <div class="col-xs-12 col-md-6 tag-cloud">
                             <label style="width: 100%;">Características</label>
                             <span class="categoria-tag hipertenso-tag"><span class="glyphicon glyphicon-check"></span> hipertenso</span>
                             <span class="categoria-tag no-lactosa-tag">no lactosa</span>
@@ -154,45 +154,27 @@
             <form role="form" id="paciente-existente-form" style="display: none;" class="crear-cita-form">
                 <h3>Paciente existente</h3>
                 <div class="row">
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-4">
                         <label for="">Nombre</label>
                         <input type="text" class="form-control" value="Gerardo"/>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-4">
                         <label for="">Primer apellido</label>
                         <input type="text" class="form-control" value="Parajeles"/>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-4">
                         <label for="">Segundo apellido</label>
                         <input type="text" class="form-control" value="Novoa"/>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-md-4">
                         <label for="">Email</label>
                         <input type="email" class="form-control" value="gerardo@parejeles.com"/>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-md-4">
                         <label for="">Telefono</label>
                         <input type="tel" class="form-control" value="555-chocolito"/>
-                    </div>
-                </div>
-                <div class="hidden">
-                    <h3>Información detallada</h3>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <label>Historial médico</label>
-                            <textarea class="form-control" rows="8" ></textarea>
-                        </div>
-                        <div class="col-xs-6 tag-cloud">
-                            <label style="width: 100%;">Características</label>
-                            <span class="categoria-tag hipertenso-tag"><span class="glyphicon glyphicon-check"></span> hipertenso</span>
-                            <span class="categoria-tag no-lactosa-tag">no lactosa</span>
-                            <span class="categoria-tag no-glutten-tag">no glutten</span>
-                            <span class="categoria-tag vegano-tag"><span class="glyphicon glyphicon-check"></span> vegano</span>
-                            <span class="categoria-tag vegetariano-tag">vegetariano</span>
-                            <span class="categoria-tag diabetico-tag">diabetico</span>
-                        </div>
                     </div>
                 </div>
             </form>
