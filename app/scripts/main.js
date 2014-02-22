@@ -82,5 +82,17 @@ $(function () {
         });
     }
 
+    if ($('#fechaInicio').length) {
+        $('#retoFechaInicio').datetimepicker({
+            pickTime: false
+        });
+    }
+
+    if ($('#fechaFinal').length) {
+        $('#retoFechaFinal').datetimepicker({
+            pickTime: false
+        });
+    }
+
     $('[title]').tooltip();
 });

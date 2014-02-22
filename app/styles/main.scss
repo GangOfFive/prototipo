@@ -7,12 +7,13 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import "paginas/detalle-paciente";
 @import "paginas/pacientes";
-@import "paginas/nuevo-objetivo";
-@import "paginas/nueva-receta";
-@import "paginas/nueva-cita";
+@import "paginas/crear-objetivo";
+@import "paginas/crear-receta";
+@import "paginas/crear-cita";
 @import "paginas/calorias";
 @import "paginas/recetas";
 @import "paginas/crear-paciente";
+@import "paginas/crear-reto";
 @import "paginas/calendarizar-cita";
 @import "paginas/dashboard";
 @import "paginas/timeline";
