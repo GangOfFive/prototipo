@@ -49,6 +49,7 @@ $(function () {
     $('modal[src]').each(function () {
         $(this).load($(this).attr('src'));
     });
+    $('[title]').tooltip();
 
     $('#btn-agregar-paciente').click(function() {
         $('#paciente-nuevo-form').slideToggle();
@@ -56,8 +57,9 @@ $(function () {
     });
 
     $('#btn-paciente-existente').click(function() {
-        $('#paciente-existente-form').slideToggle();
+        $('#inyectar-busqueda-pacientes').load('partials/lista-pacientes.html');
         $('#tipo-paciente-wrap').slideToggle();
+        $('#paciente-existente-form').slideToggle();
     });
 
     if ($('#datetimepicker1').length && $('#datetimepicker2').length) {
@@ -66,12 +68,12 @@ $(function () {
             defaultDate: '3/3/2014',
             pickTime: false
         }).on('change.dp', function() {
-                var fecha = $(this).data('DateTimePicker').getDate();
+            var fecha = $(this).data('DateTimePicker').getDate();
 
-                if ($('#fecha').val()) {
-                    $('#citas-para-fecha').slideDown();
-                    $('#fechaSeleccionada').text(fecha.format('DD [de] MMMM [del] YYYY'));
-                }
+            if ($('#fecha').val()) {
+                $('#citas-para-fecha').slideDown();
+                $('#fechaSeleccionada').text(fecha.format('DD [de] MMMM [del] YYYY'));
+            }
         });
 
         $('#datetimepicker2').datetimepicker({
@@ -94,5 +96,5 @@ $(function () {
         });
     }
 
-    $('[title]').tooltip();
+    $('#inyectar-pacientes').load('partials/lista-pacientes.html');
 });

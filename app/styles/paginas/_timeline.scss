@@ -1,22 +1,17 @@
 .carousel {
-  background: #333;
+  background: #333333;
 
   .item {
     text-align: center;
   }
-  p {
-    position: absolute;
-    bottom: 35px;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    background: rgba(#000, .7);
-    padding: 5px 0;
-    color: #fff;
+  .datos-cita {
+    margin: 50px 0 20px;
   }
-}
-.carousel-inner > .item > img {
-  display: inline-block;
+  .list-group-item {
+    text-align: left;
+    background: transparent;
+    color: #eeeeee;
+  }
 }
 
 .carousel-indicators {

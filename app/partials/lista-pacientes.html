@@ -1,0 +1,69 @@
+<div class="pacientes">
+    <div class="row">
+        <div class="col-xs-12 col-md-9"><div class="input-group">
+            <input placeholder="Buscar por nombre" type="text" class="form-control">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search"></span>
+                    Buscar
+                </button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu tag-dropdown" role="menu">
+                    <li><a href="#"><span class="glyphicon glyphicon-check"></span><span class="categoria-tag hipertenso-tag">hipertenso</span></a></li>
+                    <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag vegetariano-tag">vegetariano</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-check"></span><span class="categoria-tag diabetico-tag">diabético</span></a></li>
+                    <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag vegano-tag">vegano</span></a></li>
+                    <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag nogluten-tag">no gluten</span></a></li>
+                    <li><a href="#"><span class="glyphicon"></span><span class="categoria-tag nolactosa-tag">no lactosa</span></a></li>
+                </ul>
+            </div>
+        </div></div>
+        <div class="col-xs-12 col-md-3">
+            <button class="btn btn-primary form-control">Agregar</button>
+        </div>
+    </div>
+
+</div>
+<table class="table table-bordered table-hover tabla-pacientes-lista">
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Primer Apellido</th>
+        <th class="hidden-xs">Segundo Apellido</th>
+        <th>Última cita</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td class="hidden-xs">Man</td>
+        <td>hace 5 días</td>
+    </tr>
+    <tr class="active">
+        <td>Jacob</td>
+        <td>Santana</td>
+        <td class="hidden-xs">Thornton</td>
+        <td>hace 10 días</td>
+    </tr>
+    <tr>
+        <td>Larry</td>
+        <td>the</td>
+        <td class="hidden-xs">Bird</td>
+        <td>hace 1 mes</td>
+    </tr>
+    </tbody>
+</table>
+
+<ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li class="active"><a href="#">3 <span class="sr-only">(current)</span></a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>

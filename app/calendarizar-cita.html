@@ -99,7 +99,9 @@
                         <var>Existente</var>
                     </div>
                     <div class="options">
-                        <a class="btn btn-primary" id="btn-paciente-existente"><i class="glyphicon glyphicon-user"></i> Buscar</a>
+                        <a id="btn-paciente-existente" href="#lista-pacientes" class="btn btn-success" data-toggle="modal" data-target="#lista-pacientes"><i class="glyphicon glyphicon-user"></i> Buscar</a>
+
+                        <!--<a class="btn btn-primary" ><i class="glyphicon glyphicon-user"></i> Buscar</a>-->
                     </div>
                 </div>
             </div>
@@ -182,6 +184,8 @@
 
         <button class="btn btn-lg btn-primary pull-right">Calendarizar cita</button>
     </div>
+
+    <modal src="modals/lista-pacientes.html"></modal>
 
     <div class="footer">
         <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>

@@ -26,23 +26,23 @@
 
     <div id="crear-cita" class="container">
         <div class="row-fluid">
-            <h1>Nueva cita <br/><small>Gerardo Parajeles</small></h1>
+            <h1>Nueva cita <small>Gerardo Parajeles</small></h1>
 
             <div class="cita-anterior-detalles col-xs-12 col-md-3">
                 <div class="perfil-paciente-datos-wrap">
                     <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
                     <p class="lista-categorias"><span class="categoria-tag hipertenso-tag">hipertenso</span> <span class="categoria-tag vegano-tag">vegano</span></p>
                     <h3 class="hidden-xs"> Cita anterior</h3>
-                    <ul class="hidden-xs perfil-paciente-datos">
-                        <li><span class="dato-definicion">Hace</span> 30 días</li>
-                        <li><span class="dato-definicion">Peso</span> 75kg</li>
-                        <li><span class="dato-definicion">Meta</span> 6kg</li>
-                        <li><span class="dato-definicion">IMC</span> 30%</li>
-                        <li><span class="dato-definicion">Agua</span> 40%</li>
-                        <li><span class="dato-definicion">Medidas</span> <br/>25cm | 30cm | 50cm</li>
-                        <li><span class="dato-definicion">Objetivo</span> <br/>reducir 2% de grasa corporal.</li>
-                        <li><span class="dato-definicion">Recomendaciones</span> <br/>incrementar ejercicio.</li>
-                        <li><span class="dato-definicion">Notas</span> <br/>quiere correr pero le duelen las rodillas.</li>
+                    <ul class="hidden-xs list-group">
+                        <li class="list-group-item">Hace: 30 días</li>
+                        <li class="list-group-item">Peso: 75kg</li>
+                        <li class="list-group-item">Meta: 6kg</li>
+                        <li class="list-group-item">IMC: 30%</li>
+                        <li class="list-group-item">% de Agua: 40%</li>
+                        <li class="list-group-item">Medidas <br/>25cm | 30cm | 50cm</li>
+                        <li class="list-group-item">Objetivo: <br/>reducir 2% de grasa corporal.</li>
+                        <li class="list-group-item">Recomendaciones: <br/>incrementar ejercicio.</li>
+                        <li class="list-group-item">Notas: <br/>quiere correr pero le duelen las rodillas.</li>
                     </ul>
                 </div>
             </div>
@@ -80,16 +80,17 @@
                         </div>
                     </div>
                     <div class="form-group hidden-xs">
-                        <h3>Archivos</h3>
+                        <h3><span class="glyphicon glyphicon-file"></span> Archivos</h3>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <label><span class="glyphicon glyphicon-camera"></span> Fotos</label>
+                                <label style="width: 100%">Fotos</label>
                                 <input type="file">
+                                <img class="img-thumbnail" style="margin-top: 10px;" src="http://qph.is.quoracdn.net/main-thumb-16709497-200-bTShB9THAU1o3wAn1kYX2BhjnjpucPAX.jpeg" alt=""/>
                             </div>
                             <div class="col-xs-12 col-md-6">
-                                <label><span class="glyphicon glyphicon-file"></span> Archivos adjuntos</label>
+                                <label>Archivos adjuntos</label>
                                 <input type="file">
-                                <h5>Actuales</h5>
+                                <h4>Actuales</h4>
                                 <ul class="archivos-adjuntos">
                                     <li>como-correr-facil.pdf</li>
                                     <li>introduccion-al-ejercicio.pdf</li>
@@ -98,102 +99,112 @@
                         </div>
                     </div>
 
-                    <h3><span class="glyphicon glyphicon-stats"></span> Estadísticas</h3>
-                    <table class="table table-striped table-bordered table-hover">
-                        <thead>
-                        <tr>
-                            <th>Item</th>
-                            <th>Cita anterior</th>
-                            <th>Histórico</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>IMC</td>
-                            <td><span class="estadistica-positiva">29,5% ✓</span></td>
-                            <td><span class="estadistica-positiva">-2,1% ✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>Porcentaje Agua</td>
-                            <td><span class="estadistica-positiva">41,2% ✓</span></td>
-                            <td><span class="estadistica-negativa">41,2% ✗</span></td>
-                        </tr>
-                        <tr>
-                            <td>Porcentaje Grasa</td>
-                            <td><span class="estadistica-negativa">11,2% ✗</span></td>
-                            <td><span class="estadistica-negativa">9,2% ✗</span></td>
-                        </tr>
-                        <tr>
-                            <td>Metalismo basal</td>
-                            <td><span class="estadistica-positiva">+1,3% ✓</span></td>
-                            <td><span class="estadistica-positiva">+3,2% ✓</span></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <h3>Fórmulas</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item">IMC: 35%</li>
+                                <li class="list-group-item">% de Agua: 12%</li>
+                                <li class="list-group-item">% de Grasa: 31%</li>
+                            </ul>
+                        </div>
+                    <div class="col-xs-12 col-md-8"><h3><span class="glyphicon glyphicon-stats"></span> Estadísticas</h3>
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Cita anterior</th>
+                                <th>Histórico</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>IMC</td>
+                                <td><span class="estadistica-positiva">29,5% ✓</span></td>
+                                <td><span class="estadistica-positiva">-2,1% ✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Porcentaje Agua</td>
+                                <td><span class="estadistica-positiva">41,2% ✓</span></td>
+                                <td><span class="estadistica-negativa">41,2% ✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>Porcentaje Grasa</td>
+                                <td><span class="estadistica-negativa">11,2% ✗</span></td>
+                                <td><span class="estadistica-negativa">9,2% ✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>Metalismo basal</td>
+                                <td><span class="estadistica-positiva">+1,3% ✓</span></td>
+                                <td><span class="estadistica-positiva">+3,2% ✓</span></td>
+                            </tr>
+                            </tbody>
+                        </table></div>
+                    </div>
 
-                        <div class="form-group">
-                            <h3><span class="glyphicon glyphicon-cutlery"></span> Plan nutricional
-                                <div class="btn-group">
-                                    <button class="btn btn-primary btn-xs btn-plan-toggle btn-plan-simple">simple</button>
-                                    <button class="btn btn-default btn-xs btn-plan-toggle btn-plan-extendido">extendido</button>
-                                </div>
-                            </h3>
+                    <div class="form-group">
+                        <h3><span class="glyphicon glyphicon-cutlery"></span> Plan nutricional
+                            <div class="btn-group">
+                                <button class="btn btn-primary btn-xs btn-plan-toggle btn-plan-simple">simple</button>
+                                <button class="btn btn-default btn-xs btn-plan-toggle btn-plan-extendido">extendido</button>
+                            </div>
+                        </h3>
 
-                            <div class="row plan-nutricional-simple">
-                                <div class="col-xs-12 col-md-9">
-                                    <label>Calorias</label>
-                                    <input type="number" class="form-control" placeholder="Calorias">
+                        <div class="row plan-nutricional-simple">
+                            <div class="col-xs-12 col-md-9">
+                                <label>Calorias</label>
+                                <input type="number" class="form-control" placeholder="Calorias">
+                            </div>
+                            <div class="col-xs-12 col-md-3 pull-right">
+                                <label>&NonBreakingSpace;</label>
+                                <button class="btn btn-success form-control" data-toggle="modal" data-target="#agregar-objetivo">Objetivo</button>
+                            </div>
+                        </div>
+
+                        <div class="plan-nutricional-extendido" style="display: none;">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3 ">
+                                    <label for="">Carbohidratos</label>
+                                    <input type="number" class="form-control" placeholder="Carbohidratos">
                                 </div>
-                                <div class="col-xs-12 col-md-3 pull-right">
+                                <div class="col-xs-6 col-md-3 ">
+                                    <label for="">Proteinas</label>
+                                    <input type="number" class="form-control" placeholder="Proteinas">
+                                </div>
+                                <div class="col-xs-6 col-md-3 ">
+                                    <label for="">Vegetales</label>
+                                    <input type="number" class="form-control" placeholder="Vegetales">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3 ">
+                                    <label for="">Grasas</label>
+                                    <input type="number" class="form-control" placeholder="Grasas">
+                                </div>
+                                <div class="col-xs-6 col-md-3 ">
+                                    <label for="">Frutas</label>
+                                    <input type="number" class="form-control" placeholder="Frutas">
+                                </div>
+                                <div class="col-xs-6 col-md-3 ">
+                                    <label for="">Agua</label>
+                                    <input type="number" class="form-control" placeholder="Agua">
+                                </div>
+                                <div class="col-xs-12 col-md-3">
                                     <label>&NonBreakingSpace;</label>
                                     <button class="btn btn-success form-control" data-toggle="modal" data-target="#agregar-objetivo">Objetivo</button>
                                 </div>
                             </div>
-
-                            <div class="plan-nutricional-extendido" style="display: none;">
-                                <div class="row">
-                                    <div class="col-xs-6 col-md-3 ">
-                                        <label for="">Carbohidratos</label>
-                                        <input type="number" class="form-control" placeholder="Carbohidratos">
-                                    </div>
-                                    <div class="col-xs-6 col-md-3 ">
-                                        <label for="">Proteinas</label>
-                                        <input type="number" class="form-control" placeholder="Proteinas">
-                                    </div>
-                                    <div class="col-xs-6 col-md-3 ">
-                                        <label for="">Vegetales</label>
-                                        <input type="number" class="form-control" placeholder="Vegetales">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-6 col-md-3 ">
-                                        <label for="">Grasas</label>
-                                        <input type="number" class="form-control" placeholder="Grasas">
-                                    </div>
-                                    <div class="col-xs-6 col-md-3 ">
-                                        <label for="">Frutas</label>
-                                        <input type="number" class="form-control" placeholder="Frutas">
-                                    </div>
-                                    <div class="col-xs-6 col-md-3 ">
-                                        <label for="">Agua</label>
-                                        <input type="number" class="form-control" placeholder="Agua">
-                                    </div>
-                                    <div class="col-xs-12 col-md-3">
-                                        <label>&NonBreakingSpace;</label>
-                                        <button class="btn btn-success form-control" data-toggle="modal" data-target="#agregar-objetivo">Objetivo</button>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+
+                    </div>
                     <div class="form-group">
-                        <label for="exampleInputFile">Notas</label>
+                        <label for="exampleInputFile">Notas: privadas para el nutricionista.</label>
                         <textarea name="test" class="form-control" rows="3"></textarea>
                     </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">Recomendaciones</label>
-                            <textarea name="test" class="form-control" rows="3"></textarea>
-                        </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">Recomendaciones: visibles para el paciente.</label>
+                        <textarea name="test" class="form-control" rows="3"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-primary btn-lg pull-right">Registrar</button>
                 </form>
             </div>
