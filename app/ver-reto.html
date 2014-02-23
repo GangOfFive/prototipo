@@ -32,10 +32,10 @@
                 <button class="btn btn-lg btn-primary">Aceptar</button>
             </div>
             <div class="col-xs-12 col-md-6">
-                <h3>Descripción</h3>
+                <h3><span class="glyphicon glyphicon-book"></span> Descripción</h3>
                 <p>Etiam vitae lectus nisl. Mauris!! férmentum sapien lectus, sed porttitor est tincidunt vel. Vestibulum gravida urna non velit vestibulum, sit amet pretium erat consequat. Phasellus interdum tellus convallis, tincidunt augue nec, suscipit risus.</p>
                 <p>Donec consectetur sapien ac nulla tincidunt tempus. Mauris diam leo, <strong>porta et pretium eget, convallis!!!</strong> vestibulum quam. Praesent accumsan vel nisl sed feugiat. Nullam felis felis, hendrerit sit amet ipsum sit amet, hendrerit laoreet tortor.</p>
-                <h3>Premios</h3>
+                <h3><span class="glyphicon glyphicon-star"></span> Premios</h3>
                 <div class="media">
                     <span class="pull-left">
                         <img class="media-object" width="112px" src="images/award.jpg" alt="Trofeo!"/>
@@ -47,12 +47,12 @@
                 </div>
             </div>
             <div class="col-xs-12 col-md-6">
-                <h3>Fechas</h3>
+                <h3><span class="glyphicon glyphicon-calendar"></span> Fechas</h3>
                 <ul>
                     <li>Inicio: 10/10/2010</li>
                     <li>Final: 11/10/2010</li>
                 </ul>
-                <h3>Reglas</h3>
+                <h3><span class="glyphicon glyphicon-th-list"></span> Reglas</h3>
                 <ul>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                     <li>Mauris vestibulum nunc ut orci pretium auctor.</li>
@@ -63,102 +63,6 @@
                 </ul>
             </div>
         </div>
-        <!--<div class="col-xs-10 col-md-offset-1">-->
-
-        <!--</div>-->
-
-
-    </div>
-
-    <div id="crear-reto" class="container hidden">
-        <h1>Nuevo reto</h1>
-        <p> Nullam euismod, eros quis egestas pulvinar, lorem lacus posuere urna, vel ornare mi ipsum a ipsum. Quisque ultricies velit id tortor luctus pellentesque.</p>
-
-        <form role="form" class="crear-reto-form">
-            <h3>Acerca del reto</h3>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <label>Nombre</label>
-                    <input type="text" class="form-control" placeholder="Nombre"/>
-                </div>
-                <div class="col-xs-12 col-md-3">
-                    <label>Fecha inicio</label>
-                    <div class='input-group date' id='retoFechaInicio'>
-                        <input type='text' class="form-control" id="fechaInicio" placeholder="Seleccione la fecha de inicio" />
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-3">
-                    <label>Fecha inicio</label>
-                    <div class='input-group date' id='retoFechaFinal'>
-                        <input type='text' class="form-control" id="fechaFinal" placeholder="Seleccione la fecha final" />
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!--<div class="form-group">-->
-                <div class="col-xs-12 col-md-4">
-                    <label for="objetivo">Objetivo</label>
-                    <select class="form-control" id="objetivo"
-                            onchange="$('.objetivo-medida').text($(this).find('option:selected').attr('data-medida'));
-                                            $('.objetivo-val').val($(this).find('option:selected').attr('data-val'))">
-                        <option data-val="peso" data-medida="kg">Peso</option>
-                        <option data-val="pgrasa" data-medida="%">Porcentaje de Grasa</option>
-                        <option data-val="pagua" data-medida="%">Porcentaje de Agua</option>
-                    </select>
-                </div>
-
-                <div class="col-xs-12 col-md-4">
-                    <label for="direccion">Direccion</label>
-                    <select class="form-control" id="direccion">
-                        <option>Reducir medida</option>
-                        <option>Incrementar medida</option>
-                    </select>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <label class="control-label">Meta</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="objetivo-medida input-group-addon">kg</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <h4>Los usuarios que pierdan 5kg o más entre el 12/24/2014 y 12/31/2014 serán considerados ganadores.</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <label>Trofeo</label>
-                    <select class="form-control" id="direccion">
-                        <option>Trofeo #1</option>
-                        <option>Trofeo #2</option>
-                    </select>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <label>Banner</label>
-                    <input type="file">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <label>Descripcion</label>
-                    <textarea class="form-control" rows="8" ></textarea>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <label>Reglas</label>
-                    <textarea class="form-control" rows="8" ></textarea>
-                </div>
-            </div>
-
-            <button class="btn btn-lg btn-primary pull-right">Guardar y Publicar</button>
-            <button class="btn btn-lg btn-success pull-right btn-guardar-reto">Guardar</button>
-        </form>
-
     </div>
 
     <div class="footer">

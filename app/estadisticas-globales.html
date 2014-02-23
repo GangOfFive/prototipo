@@ -1,0 +1,117 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+    <div id="nav"></div>
+
+    <div id="paciente-detalle" class="container">
+        <div class="page-header">
+            <h1>Estadísticas de todos los pacientes</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#messages" data-toggle="tab">Peso</a></li>
+                    <li><a href="#home" data-toggle="tab">IMC</a></li>
+                    <li><a href="#profile" data-toggle="tab">% de Agua</a></li>
+                    <li><a href="#settings" data-toggle="tab">% de Grasa</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane" id="home">
+                        <h3>Comparación del IMC</h3>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><img src="/images/grafico-01.png" alt=""/></div>
+                            <div class="col-xs-12 col-md-4">
+                                <p>Nam sodales bibendum justo at facilisis. Integer metus nulla, elementum id iaculis eget, eleifend vitae metus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile">
+                        <h3>Comparación del % de Agua</h3>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><img src="/images/grafico-02.png" alt=""/></div>
+                            <div class="col-xs-12 col-md-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend vitae metus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane active" id="messages">
+                        <h3>Progreso de pérdida de peso</h3>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><img src="/images/grafico-04.png" alt=""/></div>
+                            <div class="col-xs-12 col-md-4">
+                                <p>Lorem ipsum dolor sit amet, eleifend vitae metus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                        <h3>Comparación del % de Grasa</h3>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><img src="/images/grafico-03.png" alt=""/></div>
+                            <div class="col-xs-12 col-md-4">
+                                <p>Nam sodales bibendum justo at facilisis. Integer metus nulla, elementum id iaculis eget, eleifend vitae metus. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
+    </div>
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -24,34 +24,34 @@
     <div id="nav"></div>
 
     <div id="crear-cita" class="crear-cita-container container">
-        <h1>Calendarizar cita</h1>
+        <div class="page-header"><h1>Calendarizar cita</h1></div>
 
         <div id="fecha-well">
             <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <h3>Seleccione la fecha</h3>
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" id="fecha" placeholder="Seleccione la fecha" />
+                <div class="col-xs-12 col-md-4">
+                    <h3>Seleccione la fecha</h3>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" id="fecha" placeholder="Seleccione la fecha" />
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
-                </div>
-                <h3>Seleccione la hora</h3>
-                <div class='input-group date' id='datetimepicker2'>
-                    <input type='text' class="form-control" placeholder="Seleccione la hora" />
+                    </div>
+                    <h3>Seleccione la hora</h3>
+                    <div class='input-group date' id='datetimepicker2'>
+                        <input type='text' class="form-control" placeholder="Seleccione la hora" />
                     <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
                     </span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-8" id="citas-para-fecha" style="display: none">
-                <h3>Citas para el <span id="fechaSeleccionada"></span>:</h3>
-                <table class="table table-striped tabla-lista-citas">
-                    <thead>
-                    <tr>
-                        <th>Hora</th>
-                        <th>Paciente</th>
-                    </tr>
-                    </thead>
-                    <tbody>
+                <div class="col-xs-12 col-md-8" id="citas-para-fecha" style="display: none">
+                    <h3>Citas para el <span id="fechaSeleccionada"></span>:</h3>
+                    <table class="table table-striped tabla-lista-citas">
+                        <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Paciente</th>
+                        </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>9:00 am</td>
                             <td><a href="detalle-paciente.html">Esteban Montero</a></td>
@@ -64,9 +64,9 @@
                             <td>11:00 am</td>
                             <td><a href="detalle-paciente.html">Alvaro Cordero</a></td>
                         </tr>
-                    </tbody>
-                </table>
-            </div>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 

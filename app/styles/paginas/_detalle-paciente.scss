@@ -6,7 +6,7 @@
 }
 
 .perfil-paciente-info {
-  @include inline-block(top);
+//  @include inline-block(top);
 }
 
 .paciente-foto-wrap {
@@ -21,13 +21,9 @@
 }
 
 .btn-nueva-cita {
-  bottom: 0;
+  bottom: 70px;
   position: absolute;
   right: 0;
-}
-
-.perfil-paciente-datos-wrap {
-  @include inline-block(top);
 }
 
 .dato-definicion {
@@ -41,30 +37,38 @@
   color: $component-active-color;
   border-radius: $border-radius-small;
   font-weight: bold;
+  background: #fff;
+  border: 1px solid #000;
 }
 
 .hipertenso-tag {
-  background: #2E8F94;
+  color: #2E8F94;
+  border-color: #2E8F94;
 }
 
 .vegetariano-tag {
-  background: #2E943D;
+  color: #2E943D;
+  border-color: #2E943D;
 }
 
 .vegano-tag {
-  background: #ECA918;
+  color: #ECA918;
+  border-color: #ECA918;
 }
 
 .diabetico-tag {
-  background: #CC63A9;
+  color: #CC63A9;
+  border-color: #CC63A9;
 }
 
 .nogluten-tag {
-  background: #B77A3D;
+  color: #B77A3D;
+  border-color: #B77A3D;
 }
 
 .nolactosa-tag {
-  background: #6C8DA9;;
+  color: #6C8DA9;;
+  border-color: #6C8DA9;;
 }
 
 .tag-dropdown {
