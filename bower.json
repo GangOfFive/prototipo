@@ -5,6 +5,7 @@
     "sass-bootstrap": "~3.0.0",
     "jquery": "~1.10.2",
     "eonasdan-bootstrap-datetimepicker": "~2.1.30",
+    "underscore": "~1.4.4",
     "momentjs": "~2.5.1"
   },
   "devDependencies": {}
