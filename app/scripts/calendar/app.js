@@ -7,7 +7,7 @@
 		view: 'month',
 		tmpl_path: 'scripts/calendar/tmpls/',
 		tmpl_cache: false,
-		day: '2013-03-12',
+		day: 'now',
 		onAfterEventsLoad: function(events) {
 			if(!events) {
 				return;

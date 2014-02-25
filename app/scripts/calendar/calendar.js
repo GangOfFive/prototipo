@@ -132,86 +132,75 @@ if(!String.prototype.formatNum) {
 	};
 
 	var defaults_extended = {
-		first_day: 2,
+		first_day: 1,
 		holidays:  {
-			// January 1
-			'01-01':  "New Year's Day",
-			// Third (+3*) Monday (1) in January (01)
-			'01+3*1': "Birthday of Dr. Martin Luther King, Jr.",
-			// Third (+3*) Monday (1) in February (02)
-			'02+3*1': "Washington's Birthday",
-			// Last (-1*) Monday (1) in May (05)
-			'05-1*1': "Memorial Day",
-			// July 4
-			'04-07':  "Independence Day",
-			// First (+1*) Monday (1) in September (09)
-			'09+1*1': "Labor Day",
-			// Second (+2*) Monday (1) in October (10)
-			'10+2*1': "Columbus Day",
-			// November 11
-			'11-11':  "Veterans Day",
-			// Fourth (+4*) Thursday (4) in November (11)
-			'11+4*4': "Thanksgiving Day",
-			// December 25
-			'25-12':  "Christmas"
+			'01-01': "Año Nuevo",
+			'05-02': "Día de la Constitución",
+			'21-03': "Natalicio de Benito Juárez",
+			'01-05': "Día del Trabajo",
+			'16-09': "Día de la Independencia",
+			'20-11': "Día de la Revolución",
+			'01-12': "Transmisión del Poder Ejecutivo Federal",
+			'25-12': "Navidad"
 		}
 	};
 
 	var strings = {
-		error_noview:     'Calendar: View {0} not found',
-		error_dateformat: 'Calendar: Wrong date format {0}. Should be either "now" or "yyyy-mm-dd"',
-		error_loadurl:    'Calendar: Event URL is not set',
-		error_where:      'Calendar: Wrong navigation direction {0}. Can be only "next" or "prev" or "today"',
-		error_timedevide: 'Calendar: Time split parameter should divide 60 without decimals. Something like 10, 15, 30',
+		error_noview:     'Calendar: Vista {0} no encontrada',
+		error_dateformat: 'Calendar: Formato de Fecha Inválido {0}. Debe ser "now" o con el formato "yyyy-mm-dd"',
+		error_loadurl:    'Calendar: URL de datos no definida',
+		error_where:      'Calendar: Direcciónd de navegación errónea {0}. Valores válidos: "next" o "prev" o "today"',
+		error_timedevide: 'Calendario: parámetro para el separador de hora debe dividir 60 por un entero. Por ejemplo 10, 15, 30',
 
-		no_events_in_day: 'No events in this day.',
+		title_year:  'Año {0}',
+		title_month: '{0} año {1}',
+		title_week:  '{0} semana del año {1}',
+		title_day:   '{0} {1} {2} año {3}',
 
-		title_year:  '{0}',
-		title_month: '{0} {1}',
-		title_week:  'week {0} of {1}',
-		title_day:   '{0} {1} {2}, {3}',
-
-		week:        'Week {0}',
-		all_day:     'All day',
-		time:        'Time',
-		events:      'Events',
-		before_time: 'Ends before timeline',
-		after_time:  'Starts after timeline',
+		week:        'Semana {0}',
+		all_day:     'Todo el día',
+		time:        'Hora',
+		events:      'Citas',
+		before_time: 'Tiempo antes de la cinta final',
+		after_time:  'Fin después de una cinta temporal',
 
 
-		m0:  'January',
-		m1:  'February',
-		m2:  'March',
-		m3:  'April',
-		m4:  'May',
-		m5:  'June',
-		m6:  'July',
-		m7:  'August',
-		m8:  'September',
-		m9:  'October',
-		m10: 'November',
-		m11: 'December',
+		m0:  'Enero',
+		m1:  'Febrero',
+		m2:  'Marzo',
+		m3:  'Abril',
+		m4:  'Mayo',
+		m5:  'Junio',
+		m6:  'Julio',
+		m7:  'Agosto',
+		m8:  'Septiembre',
+		m9:  'Octubre',
+		m10: 'Noviembre',
+		m11: 'Diciembre',
 
-		ms0:  'Jan',
+		ms0:  'Ene',
 		ms1:  'Feb',
 		ms2:  'Mar',
-		ms3:  'Apr',
+		ms3:  'Abr',
 		ms4:  'May',
 		ms5:  'Jun',
 		ms6:  'Jul',
-		ms7:  'Aug',
+		ms7:  'Ago',
 		ms8:  'Sep',
 		ms9:  'Oct',
 		ms10: 'Nov',
-		ms11: 'Dec',
+		ms11: 'Dic',
 
-		d0: 'Sunday',
-		d1: 'Monday',
-		d2: 'Tuesday',
-		d3: 'Wednesday',
-		d4: 'Thursday',
-		d5: 'Friday',
-		d6: 'Saturday'
+		d0: 'Domingo',
+		d1: 'Lunes',
+		d2: 'Martes',
+		d3: 'Miércoles',
+		d4: 'Jueves',
+		d5: 'Viernes',
+		d6: 'Sábado',
+
+		easter:       'Pascuas',
+		easterMonday: 'Lunes de Pascuas'
 	};
 
 	var browser_timezone = '';
@@ -358,7 +347,8 @@ if(!String.prototype.formatNum) {
 
 	function Calendar(params, context) {
 		this.options = $.extend(true, {position: {start: new Date(), end: new Date()}}, defaults, params);
-		this.setLanguage(this.options.language);
+		//this.setLanguage(this.options.language);
+		this.setLanguage('es-MX');
 		this.context = context;
 
 		context.css('width', this.options.width).addClass('cal-context');
