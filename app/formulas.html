@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+    <div id="nav"></div>
+
+    <div id="formulas">
+        <div class="page-header">
+            <h1>Fórmulas</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="formula">Fórmula</label>
+                        <input id="formula" class="form-control input-lg">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="formula">a</label>
+                        <input id="var-a" class="form-control input-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="formula">b</label>
+                        <input id="var-b" class="form-control input-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="formula">c</label>
+                        <input id="var-c" class="form-control input-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="formula">d</label>
+                        <input id="var-d" class="form-control input-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="formula">e</label>
+                        <input id="var-e" class="form-control input-lg">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="formula">f</label>
+                        <input id="var-f" class="form-control input-lg">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <label for="resultado">Resultado</label>
+                <input class="form-control input-lg" disabled id="resultado"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
+    </div>
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script src="bower_components/lodash/dist/lodash.min.js"></script>
+<script src="scripts/calc.js"></script>
+<script>
+    function executeCalc() {
+        var result,
+            vars;
+
+        vars = {
+            a: $("#var-a").val(),
+            b: $("#var-b").val(),
+            c: $("#var-c").val(),
+            d: $("#var-d").val(),
+            e: $("#var-e").val(),
+            f: $("#var-f").val()
+        };
+
+        result = calculator.run($("#formula").val(), vars);
+
+        if (result === undefined) {
+            result = 'Error al procesar la fórmula';
+        }
+
+        $("#resultado").val(result);
+    };
+
+    $(function () {
+        $("#formulas").on('keyup', 'input', executeCalc);
+    });
+</script>
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
