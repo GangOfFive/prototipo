@@ -8,7 +8,6 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
 
@@ -305,7 +304,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*',
+                        'fonts/{,*/}*.*',
                         'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
                     ]
                 }]
