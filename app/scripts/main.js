@@ -57,7 +57,7 @@ $(function () {
     });
 
     $('#btn-paciente-existente').click(function() {
-        $('#inyectar-busqueda-pacientes').load('partials/lista-pacientes.html');
+        $('#inyectar-busqueda-pacientes').load('partials/lista-buscar-pacientes.html');
         $('#tipo-paciente-wrap').slideToggle();
         $('#paciente-existente-form').slideToggle();
     });

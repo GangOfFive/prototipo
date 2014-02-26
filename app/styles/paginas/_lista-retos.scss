@@ -1,0 +1,18 @@
+.reto-individual {
+  @include inline-block(top);
+  float: none; margin-right: -3px;
+}
+
+.reto-finalizado {
+  @include opacity(.8);
+
+  &:before {
+    content: "Reto finalizado";
+  }
+
+  .btn-primary {
+    &:after {
+      content: " resultados";
+    }
+  }
+}
