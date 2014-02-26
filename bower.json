@@ -7,6 +7,13 @@
     "eonasdan-bootstrap-datetimepicker": "~2.1.30",
     "momentjs": "~2.5.1",
     "lodash": "~2.4.1"
+    "underscore": "~1.4.4",
+    "momentjs": "~2.5.1",
+    "bootstrap-calendar": "~0.2.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "bootstrap": ">= 3.0",
+    "moment": ">=2.3.1"
+  }
 }

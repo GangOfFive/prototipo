@@ -23,33 +23,37 @@
 <div class="container">
     <div id="nav"></div>
 
-    <div id="crear-cita" class="crear-cita-container container">
+    <div id="calendario" class="container">
         <div class="page-header">
-            <h1>Citas para hoy:</h1>
+            <h1>Calendario de citas</h1>
         </div>
 
-        <table class="table table-striped tabla-lista-citas">
-            <thead>
-            <tr>
-                <th>Hora</th>
-                <th>Paciente</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>9:00 am</td>
-                <td><a href="detalle-paciente.html">Esteban Montero</a></td>
-            </tr>
-            <tr>
-                <td>9:30 am</td>
-                <td><a href="detalle-paciente.html">Gerardo Parajeles</a></td>
-            </tr>
-            <tr>
-                <td>11:00 am</td>
-                <td><a href="detalle-paciente.html">Alvaro Cordero</a></td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="pull-right" style="margin-bottom: 1rem;">
+                    <div class="btn-group">
+                        <button class="btn btn-primary" data-calendar-nav="prev"><< Ant</button>
+                        <button class="btn" data-calendar-nav="today">Hoy</button>
+                        <button class="btn btn-primary" data-calendar-nav="next">Prox >></button>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-warning" data-calendar-view="year">Año</button>
+                        <button class="btn btn-warning active" data-calendar-view="month">Mes</button>
+                        <button class="btn btn-warning" data-calendar-view="week">Semana</button>
+                        <button class="btn btn-warning" data-calendar-view="day">Día</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span9">
+                <div id="calendar"></div>
+            </div>
+        </div>
+        <!-- endcalendar -->
+
+
     </div>
 
     <modal src="modals/lista-pacientes.html"></modal>
@@ -82,7 +86,10 @@
 <script src="bower_components/sass-bootstrap/js/tab.js"></script>
 <script src="bower_components/moment/moment.js"></script>
 <script src="bower_components/moment/lang/es.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
 <script src="bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+<script src="bower_components/bootstrap-calendar/js/calendar.js"></script>
+<script src="bower_components/bootstrap-calendar/js/language/es-ES.js"></script>
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
