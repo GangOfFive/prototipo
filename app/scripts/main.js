@@ -99,7 +99,7 @@ $(function () {
     $('#inyectar-pacientes').load('partials/lista-pacientes.html');
 
     // Calendario
-    if (('#calendar').length) {
+    if ($('#calendar').length) {
         var calendarOpts = {
             events_source: '/scripts/citas.json',
             view: 'month',
