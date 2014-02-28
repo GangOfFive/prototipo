@@ -46,6 +46,7 @@ $(function () {
     });
 
     $('#nav').load('nav.html');
+    $('#nav2').load('nav-paciente.html');
     $('modal[src]').each(function () {
         $(this).load($(this).attr('src'));
     });
