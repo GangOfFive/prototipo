@@ -1,0 +1,105 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+
+<div id="nav"><nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-home"></span> SIMA</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="#">Módulos</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Precios <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Sistema de pagos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Características del sistema</a></li>
+            <li><a href="#">Casos de éxito</a></li>
+
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<!-- Login:Start -->
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+  <div class="page-header"><h2>Ingreso de Usuario</h2></div>
+    <form class="form-horizontal">
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend><h3>¿Tiene una cuenta en SIMA? Acceda ahora</h3></legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-1 control-label" for="username"></label>  
+          <div class="col-md-12">
+            <input id="username" name="username" type="text" placeholder="Usuario" class="form-control input-md">
+          </div>
+        </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="col-md-1 control-label" for="password"></label>
+          <div class="col-md-12">
+            <input id="password" name="password" type="password" placeholder="Contraseña" class="form-control input-md">
+          </div>
+        </div>
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+          <label class="col-md-1 control-label" for="login"></label>
+        <div class="col-md-5">
+          <a id="login" name="login" class="btn btn-block btn-success" href="index-paciente.html">Acceda</a>
+        </div>
+        <div class="col-md-5">
+          <button id="forpass" name="forpass" class="btn btn-block btn-warning">Olvidé mi contraseña</button></div>  
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="col-md-3"></div>
+</div> <!--./row -->
+<!-- Login:End -->
+
+</div>
+
+
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+</body>
+</html>
