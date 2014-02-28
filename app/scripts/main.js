@@ -65,20 +65,33 @@ $(function () {
     if ($('#datetimepicker1').length && $('#datetimepicker2').length) {
         $('#datetimepicker1').datetimepicker({
             useSeconds: false,
-            defaultDate: '3/3/2014',
+            defaultDate: '03/01/2014',
             pickTime: false
         }).on('change.dp', function() {
                 var fecha = $(this).data('DateTimePicker').getDate();
 
                 if ($('#fecha').val()) {
-                    $('#citas-para-fecha').slideDown();
+                    if($('#fecha').val() != '05/03/2014'){
+                        $('#citas-para-fecha').slideDown();
+                    }
+                    else{
+                        $('#citas-para-fecha').slideUp();
+                    }
+                    
                     $('#fechaSeleccionada').text(fecha.format('DD [de] MMMM [del] YYYY'));
                 }
             });
 
         $('#datetimepicker2').datetimepicker({
             useSeconds: false,
-            minuteStepping: 15,
+            minuteStepping: 00,
+            pick12HourFormat: true,
+            pickDate: false
+        });
+
+        $('#datetimepicker3').datetimepicker({
+            useSeconds: false,
+            minuteStepping: 00,
             pick12HourFormat: true,
             pickDate: false
         });

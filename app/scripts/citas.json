@@ -6,8 +6,8 @@
 			"title": "Esteban Montero",
 			"url": "",
 			"class": "event-warning",
-			"start": "1393688100000",
-			"end":   "1393691700000"
+			"start": "1393858800000",
+			"end":   "1393862400000"
 		},
 		{
 			"id": "3",
@@ -20,15 +20,15 @@
 		{
 			"id": "5",
 			"title": "Alvaro Cordero",
-			"url": "http://www.google.com/",
+			"url": "",
 			"class": "event-warning",
-			"start": "1394037900000",
-			"end":   "1394041500000"
+			"start": "1393876800000",
+			"end":   "1393880400000"
 		},
 		{
 			"id": "7",
 			"title": "Francisco Ramirez",
-			"url": "http://www.google.com/",
+			"url": "",
 			"class": "event-warning",
 			"start": "1394208000000",
 			"end":   "1394211600000"
