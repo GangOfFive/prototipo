@@ -1,0 +1,172 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+    <div id="nav"></div>
+
+    <div id="crear-cita" class="container">
+        <div class="page-header"><h1>Editar paciente</h1></div>
+
+        <form role="form" class="crear-paciente-form">
+            <h3>Información básica</h3>
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" value="Gerardo"/>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <label for="">Primer apellido</label>
+                    <input type="text" class="form-control" placeholder="Primer apellido" value="Parajeles"/>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <label for="">Segundo apellido</label>
+                    <input type="text" class="form-control" placeholder="Segundo apellido" value="Man"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" placeholder="email" value="mock@parajeles.com"/>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <label for="">Telefono</label>
+                    <input type="tel" class="form-control" placeholder="0000-000" value="555-Chocolito"/>
+                </div>
+            </div>
+            <h3>Información detallada</h3>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <label>Historial médico</label>
+                    <textarea class="form-control" rows="8" >Proin diam dui, porttitor non augue ac, consequat placerat sem. Nullam commodo venenatis posuere. Donec ultricies lacus eu enim rhoncus hendrerit ut a nunc. Sed sed tellus congue, cursus eros a, hendrerit sapien. Pellentesque ac leo elit. Vestibulum lobortis rhoncus erat vitae sodales. Vivamus eu molestie metus. Mauris velit mauris, interdum vitae dui at, ullamcorper suscipit lectus. Praesent volutpat condimentum nisl dapibus congue. Morbi ac tincidunt ante. Nam scelerisque condimentum turpis a pellentesque. Quisque feugiat quam et elit euismod, quis mollis metus scelerisque. Nam posuere malesuada augue, eget aliquam augue feugiat id. Maecenas at velit pellentesque, euismod ipsum vestibulum, pretium turpis. Pellentesque sed lectus massa. Vestibulum in purus ligula. Maecenas ullamcorper libero lacus, ut tincidunt nisi porttitor sit amet.
+                    </textarea>
+                </div>
+                <div class="col-xs-12 col-md-6 tag-cloud">
+                    <label style="width: 100%;">Características</label>
+                    <span class="categoria-tag hipertenso-tag"><span class="glyphicon glyphicon-check"></span> hipertenso</span>
+                    <span class="categoria-tag nolactosa-tag">no lactosa</span>
+                    <span class="categoria-tag nogluten-tag">no gluten</span>
+                    <span class="categoria-tag vegano-tag"><span class="glyphicon glyphicon-check"></span> vegano</span>
+                    <span class="categoria-tag vegetariano-tag">vegetariano</span>
+                    <span class="categoria-tag diabetico-tag">diabetico</span>
+                </div>
+            </div>
+            <h3>Nutricionista</h3>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="input-group">
+                        <input placeholder="Buscar por nombre o ingredientes..." type="text" class="input form-control" value="Nicole Parra">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default btn" type="button"   data-toggle="modal" data-target="#buscar-nutricionista">
+                                <span class="glyphicon glyphicon-search"></span>
+                                Re-asignar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <button class="btn btn-lg btn-primary pull-right"><span class="glyphicon glyphicon-plus"></span> Guardar</button>
+        <button data-toggle="modal" data-target="#formulas-modal" class="btn btn-lg btn-primary pull-right" style="margin-right: 20px"><span class="glyphicon glyphicon-plus"></span> Fórmulas</button>
+
+        <modal src="modals/formulas-modal.html"></modal>
+    </div>
+
+    <div class="footer">
+        <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
+    </div>
+
+</div>
+
+<div class="modal fade" id="buscar-nutricionista" tabindex="-1" role="dialog" aria-labelledby="lista-pacientes" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Detalle de cita</h4>
+            </div>
+            <div class="modal-body">
+                <div class="pacientes">
+    <div class="row">
+        <div class="col-xs-12 col-md-12"><div class="input-group">
+            <input type="text" style="margin-bottom: 1rem;" class="form-control" placeholder="Buscar por nombre">
+            <div class="input-group-btn">
+                <button style="margin-bottom: 1rem;" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"></span>
+                    Buscar
+                </button>
+            </div>
+        </div></div>
+    </div>
+
+</div>
+<table class="table table-bordered table-hover tabla-pacientes-lista">
+    <thead>
+    <tr>
+        <th>Nutricionista</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="active">
+        <td>Priscilla Araya<button class="btn btn-success pull-right" data-dismiss="modal" ><span class="glyphicon glyphicon-transfer"></span> Asignar</button></td>
+    </tr>
+    <tr>
+        <td>Marcela Soto<button class="btn btn-success pull-right" data-dismiss="modal" ><span class="glyphicon glyphicon-transfer"></span> Asignar</button></td>
+    </tr>
+    <tr>
+        <td>Jackeline Fallas<button class="btn btn-success pull-right" data-dismiss="modal" ><span class="glyphicon glyphicon-transfer"></span> Asignar</button></td>
+    </tr>
+    </tbody>
+</table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
