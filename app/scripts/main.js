@@ -115,6 +115,8 @@ $(function () {
 
     $('#inyectar-pacientes2').load('partials/lista-pacientes2.html');
 
+    $('#inyectar-nutricionistas').load('partials/lista-nutricionistas.html');
+
     // Calendario
     if ($('#calendar').length) {
         var calendarOpts = {
