@@ -1,0 +1,226 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+    <div id="nav"></div>
+
+    <div id="crear-cita" class="crear-cita-container container">
+        <div class="page-header"><h1>Calendarizar cita</h1></div>
+
+        <div id="fecha-well">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <h3>Seleccione la fecha</h3>
+                    <div class='input-group date' id='datetimepicker4'>
+                        <input type='text' class="form-control" id="fecha" placeholder="Seleccione la fecha" value="22/03/2014" />
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                    </div>
+                    <h3>Seleccione la hora</h3>
+                        <p>Inicio:</p>
+                    <div class='input-group date' id='datetimepicker5'>
+                        <input type='text' class="form-control" placeholder="Seleccione la hora" value="12:00" />
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                    </div>
+                        <p>Fin:</p>
+                    <div class='input-group date' id='datetimepicker6'>
+                        <input type='text' class="form-control" placeholder="Seleccione la hora" value="12:30" />
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8" id="citas-para-fecha" style="display: none">
+                    <h3>Citas para el <span id="fechaSeleccionada"></span>:</h3>
+                    <table class="table table-striped tabla-lista-citas">
+                        <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Paciente</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>9:00 am</td>
+                            <td><a href="detalle-paciente.html">Esteban Montero</a></td>
+                        </tr>
+                        <tr>
+                            <td>2:00 pm</td>
+                            <td><a href="detalle-paciente.html">Alvaro Cordero</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <h2>Tipo de paciente
+            <div class="btn-group hidden">
+                <button class="btn btn-primary btn-xs btn-plan-toggle btn-plan-simple">nuevo</button>
+                <button class="btn btn-default btn-xs btn-plan-toggle btn-plan-extendido">existente</button>
+            </div>
+        </h2>
+        <div class="row" id="tipo-paciente-wrap">
+            <div class="col-xs-12 col-md-6">
+                <div class="hero-widget well well-sm">
+                    <div class="icon hidden-xs">
+                        <i class="glyphicon glyphicon-user"></i>
+                    </div>
+                    <div class="text">
+                        <var>Nuevo</var>
+                    </div>
+                    <div class="options">
+                        <a class="btn btn-primary" id="btn-agregar-paciente"><i class="glyphicon glyphicon-plus"></i> Agregar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="hero-widget well well-sm">
+                    <div class="icon hidden-xs">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </div>
+                    <div class="text">
+                        <var>Existente</var>
+                    </div>
+                    <div class="options">
+                        <a id="btn-paciente-existente" href="#lista-pacientes" class="btn btn-success" data-toggle="modal" data-target="#lista-pacientes"><i class="glyphicon glyphicon-user"></i> Buscar</a>
+
+                        <!--<a class="btn btn-primary" ><i class="glyphicon glyphicon-user"></i> Buscar</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="paciente-well">
+            <form role="form" id="paciente-nuevo-form" style="display: none;" class="crear-cita-form">
+                <h3>Paciente nuevo</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre"/>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <label for="">Primer apellido</label>
+                        <input type="text" class="form-control" placeholder="Primer apellido"/>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <label for="">Segundo apellido</label>
+                        <input type="text" class="form-control" placeholder="Segundo apellido"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" placeholder="email"/>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <label for="">Telefono</label>
+                        <input type="tel" class="form-control" placeholder="0000-000"/>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <h3>Información detallada</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <label>Historial médico</label>
+                            <textarea class="form-control" rows="8" ></textarea>
+                        </div>
+                        <div class="col-xs-12 col-md-6 tag-cloud">
+                            <label style="width: 100%;">Características</label>
+                            <span class="categoria-tag hipertenso-tag"><span class="glyphicon glyphicon-check"></span> hipertenso</span>
+                            <span class="categoria-tag no-lactosa-tag">no lactosa</span>
+                            <span class="categoria-tag no-glutten-tag">no glutten</span>
+                            <span class="categoria-tag vegano-tag"><span class="glyphicon glyphicon-check"></span> vegano</span>
+                            <span class="categoria-tag vegetariano-tag">vegetariano</span>
+                            <span class="categoria-tag diabetico-tag">diabetico</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form role="form" id="paciente-existente-form" style="display: none;" class="crear-cita-form">
+                <h3>Paciente existente</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control" value="Gerardo"/>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Primer apellido</label>
+                        <input type="text" class="form-control" value="Parajeles"/>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Segundo apellido</label>
+                        <input type="text" class="form-control" value="Novoa"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" value="gerardo@parejeles.com"/>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Telefono</label>
+                        <input type="tel" class="form-control" value="555-chocolito"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <a class="btn btn-lg btn-primary pull-right" href="lista-citas.html">Calendarizar cita</a>
+    </div>
+
+    <modal src="modals/lista-pacientes.html"></modal>
+
+    <div class="footer">
+        <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
+    </div>
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/moment/lang/es.js"></script>
+<script src="bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

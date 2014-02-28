@@ -165,4 +165,8 @@ $(function () {
         });
     }
 
+    $('#calendar').dblclick(function() {
+        window.location.href = '/calendarizar-cita2.html';
+    });
+
 });
