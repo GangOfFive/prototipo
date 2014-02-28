@@ -36,10 +36,15 @@
                     </span>
                     </div>
                     <h3>Seleccione la hora</h3>
+                        <p>Inicio:</p>
                     <div class='input-group date' id='datetimepicker2'>
                         <input type='text' class="form-control" placeholder="Seleccione la hora" />
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
-                    </span>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                    </div>
+                        <p>Fin:</p>
+                    <div class='input-group date' id='datetimepicker3'>
+                        <input type='text' class="form-control" placeholder="Seleccione la hora" />
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-8" id="citas-para-fecha" style="display: none">
@@ -57,11 +62,7 @@
                             <td><a href="detalle-paciente.html">Esteban Montero</a></td>
                         </tr>
                         <tr>
-                            <td>9:30 am</td>
-                            <td><a href="detalle-paciente.html">Gerardo Parajeles</a></td>
-                        </tr>
-                        <tr>
-                            <td>11:00 am</td>
+                            <td>2:00 pm</td>
                             <td><a href="detalle-paciente.html">Alvaro Cordero</a></td>
                         </tr>
                         </tbody>
@@ -182,7 +183,7 @@
             </form>
         </div>
 
-        <button class="btn btn-lg btn-primary pull-right">Calendarizar cita</button>
+        <a class="btn btn-lg btn-primary pull-right" href="lista-citas.html">Calendarizar cita</a>
     </div>
 
     <modal src="modals/lista-pacientes.html"></modal>
