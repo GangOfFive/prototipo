@@ -3,25 +3,21 @@ var calculator = (function () {
             e: Math.E,
             pi: Math.PI
         },
-        FN_REGEX = /\b(([A-Za-z_](\w+)?)\()\b/g;
-        VAR_NAME_REGEX = /\b([A-Za-z_](\w+)?)\b/g;
-        POW_REGEX = /\b(\w+)\s*\^\s*(\w+)\b/g;
-
-    for (var fn in Math) {
-        context[fn] = Math[fn];
-    }
+        FN_REGEX = /\b(([A-Za-z_](\w+)?)\()\b/g,
+        VAR_NAME_REGEX = /(\b([A-Za-z_](\w+)?)\b)/g,
+        POW_REGEX = /\b(\w+?)\s*\^\s*(\w+?)\b/g;
 
     function runProgram(program) {
         var result;
 
         // allow a^b notation for exponentiation
+        // this is not robust, should use an actual parser sooner or later
         program = program.replace(POW_REGEX, 'pow($1, $2)');
 
+        console.log(program);
         with (Math) {
             with (context) {
-                try {
-                    result = eval(program);
-                } catch (err) {console.log(err);}
+                result = eval(program);
             }
         }
         return result;
@@ -43,6 +39,7 @@ var calculator = (function () {
             try {
                 return runProgram(program);
             } catch (err) {
+                console.log(err);
                 return undefined;
             }
         },
