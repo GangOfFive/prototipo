@@ -1,0 +1,212 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+    <div id="nav"></div>
+
+    <div id="paciente-detalle" class="container">
+        <div class="page-header">
+            <h1>Detalle de paciente</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="paciente-foto-wrap">
+                    <img class="perfil-paciente-img" src="http://m.c.lnkd.licdn.com/media/p/2/000/241/098/14ecb4c.jpg" alt="Gerardo Parajeles"/>
+                    <h2>Gerardo Parajeles</h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <section class="perfil-paciente-info">
+                    <div class="row">
+                        <div class="perfil-paciente-datos-wrap col-xs-12 col-md-6">
+                            <h3>Datos</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item"><span class="dato-definicion">Edad</span> 29 años</li>
+                                <li class="list-group-item"><span class="dato-definicion">Peso actual</span> 75kg</li>
+                                <li class="list-group-item"><span class="dato-definicion">Altura</span> 1.74cm</li>
+                                <li class="list-group-item"><span class="dato-definicion">Objetivo</span> bajar de peso</li>
+                                <li class="list-group-item"><span class="dato-definicion">Categorías</span> <span class="categoria-tag hipertenso-tag">hipertenso</span> <span class="categoria-tag vegano-tag">vegano</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="perfil-paciente-datos-wrap col-xs-12  col-md-6">
+                            <h3>Contacto</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item"><span class="dato-definicion">Tel.</span> 555-Chocolito</li>
+                                <li class="list-group-item"><span class="dato-definicion">Correo</span> mock@parajeles.com</li>
+                                <li class="list-group-item"><span class="dato-definicion">Nutricionista</span> Nicolle Parra</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <h3>Ultimas citas
+                    <a href="crear-cita.html" class="btn btn-success btn-sm pull-right"><span class="glyphicon glyphicon-plus"></span> Nueva Cita</a>
+                </h3>
+
+                <table class="table table-striped table-bordered table-hover tabla-citas-paciente">
+                    <thead>
+                    <tr>
+                        <th>Última cita</th>
+                        <th>Peso</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>hace 5 días</td>
+                        <td>77kg</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Ver</button>
+                                <button class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Editar</button>
+                                <button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-trash"></span> Borrar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hace 10 días</td>
+                        <td>79kg</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Ver</button>
+                                <button class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Editar</button>
+                                <button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-trash"></span> Borrar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hace 1 mes</td>
+                        <td>81kg</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Ver</button>
+                                <button class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Editar</button>
+                                <button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-trash"></span> Borrar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#messages" data-toggle="tab">Peso</a></li>
+                    <li><a href="#home" data-toggle="tab">IMC</a></li>
+                    <li><a href="#profile" data-toggle="tab">% de Agua</a></li>
+                    <li><a href="#settings" data-toggle="tab">% de Grasa</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane" id="home">
+                        <h3>Comparación del IMC</h3>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><img src="/images/grafico-01.png" alt=""></div>
+                            <div class="col-xs-12 col-md-4">
+                                <p>Nam sodales bibendum justo at facilisis. Integer metus nulla, elementum id iaculis eget, eleifend vitae metus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile">
+                        <h3>Comparación del % de Agua</h3>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><img src="/images/grafico-02.png" alt=""></div>
+                            <div class="col-xs-12 col-md-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend vitae metus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane active" id="messages">
+                        <h3>Progreso de pérdida de peso</h3>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><img src="/images/grafico-04.png" alt=""></div>
+                            <div class="col-xs-12 col-md-4">
+                                <p>Lorem ipsum dolor sit amet, eleifend vitae metus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                        <h3>Comparación del % de Grasa</h3>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><img src="/images/grafico-03.png" alt=""></div>
+                            <div class="col-xs-12 col-md-4">
+                                <p>Nam sodales bibendum justo at facilisis. Integer metus nulla, elementum id iaculis eget, eleifend vitae metus. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h3>Historial médico</h3>
+                <p>
+                    Proin diam dui, porttitor non augue ac, consequat placerat sem. Nullam commodo venenatis posuere. Donec ultricies lacus eu enim rhoncus hendrerit ut a nunc. Sed sed tellus congue, cursus eros a, hendrerit sapien. Pellentesque ac leo elit. Vestibulum lobortis rhoncus erat vitae sodales. Vivamus eu molestie metus.
+                </p>
+                <p>
+                    Mauris velit mauris, interdum vitae dui at, ullamcorper suscipit lectus. Praesent volutpat condimentum nisl dapibus congue. Morbi ac tincidunt ante. Nam scelerisque condimentum turpis a pellentesque. Quisque feugiat quam et elit euismod, quis mollis metus scelerisque. Nam posuere malesuada augue, eget aliquam augue feugiat id. Maecenas at velit pellentesque, euismod ipsum vestibulum, pretium turpis. Pellentesque sed lectus massa. Vestibulum in purus ligula. Maecenas ullamcorper libero lacus, ut tincidunt nisi porttitor sit amet.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
+    </div>
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

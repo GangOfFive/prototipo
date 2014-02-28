@@ -111,6 +111,8 @@ $(function () {
 
     $('#inyectar-pacientes').load('partials/lista-pacientes.html');
 
+    $('#inyectar-pacientes2').load('partials/lista-pacientes2.html');
+
     // Calendario
     if ($('#calendar').length) {
         var calendarOpts = {
