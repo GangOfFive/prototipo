@@ -26,7 +26,7 @@
 
     <div id="formulas">
         <div class="page-header">
-            <h1>Fórmulas</h1>
+            <h1>Crear Fórmula</h1>
         </div>
 
         <div class="row">
@@ -34,18 +34,24 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <label for="formula">Fórmula</label>
-                        <input id="formula" class="form-control input-lg">
+                        <label for="formula">Detalle de Fórmula</label>
+                        <input id="formula" class="form-control input-lg" placeholder="Ejemplo: a+b/c ...">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre ..."/>
+                        <label>Descripción</label>
+                        <textarea class="form-control" rows="3" placeholder="Descripción ..."></textarea>
                     </div>
-                    <div id="var-input-container"></div>
+
                 </div>
             </div>
 
 
             <div class="col-md-6">
-                <label for="resultado">Resultado</label>
+                <label for="resultado">Prueba de Resultado</label>
                 <input class="form-control input-lg" disabled id="resultado">
+                <div id="var-input-container" style="margin-top: 4px"></div>
             </div>
+
         </div>
 
         <div class="page-header">
@@ -94,4 +100,3 @@
 <script src="scripts/formulas.js"></script>
 <!-- endbuild -->
 </body>
-</html>
