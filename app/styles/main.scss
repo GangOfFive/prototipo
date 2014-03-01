@@ -43,3 +43,9 @@ body {
 .opciones-administrador {
   background: $brand-warning;
 }
+
+.buscar-pacientes-reto {
+  .btn-primary {
+    display: none;
+  }
+}
