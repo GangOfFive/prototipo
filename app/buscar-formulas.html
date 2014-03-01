@@ -1,0 +1,137 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototipo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+    <div id="nav"></div>
+
+    <div id="pacientes">
+        <div class="page-header">
+            <h1>Fórmulas</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla condimentum tellus, ut aliquam lorem varius ac. Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pacientes">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-9">
+                            <div class="input-group">
+                                <input placeholder="Buscar por nombre" type="text" class="form-control"  style="margin-bottom: 1rem;">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="button" style="margin-bottom: 1rem;">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        Buscar
+                                    </button>
+                                </div>
+                             </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <table class="table table-bordered table-hover tabla-pacientes-lista">
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Peso ideal</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Índice de Masa Corporal</td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje de Agua Corporal</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li class="active"><a href="#">3 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 lista-pacientes">
+                <section class="perfil-paciente-info  listado-paciente">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row">
+
+                                <div class="col-xs-12">
+                                    <h2>Índice de Masa Corporal</h2>
+                                    <p><span class="dato-definicion">Fórmula:</span> peso/(altura^2)</p>
+                                    <p><span class="dato-definicion">Descripción:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla condimentum tellus, ut aliquam lorem varius ac. Nunc ut viverra sem. Etiam porttitor mollis turpis. Aenean sollicitudin neque id felis eleifend venenatis.</p>
+                                    <div class="btn-group">
+                                        <div class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Editar</div>
+                                        <div class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Eliminar</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="footer">
+            <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
+        </div>
+
+    </div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+    <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+    <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+    <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+    <script src="bower_components/sass-bootstrap/js/button.js"></script>
+    <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+    <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+    <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+    <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
