@@ -1,0 +1,45 @@
+{
+	"success": 1,
+	"result": [
+		{
+			"id": "1",
+			"title": "Esteban Montero",
+			"url": "",
+			"class": "event-warning",
+			"start": "1393858800000",
+			"end":   "1393862400000"
+		},
+		{
+			"id": "3",
+			"title": "Gerardo Parajeles",
+			"url": "",
+			"class": "event-warning",
+			"start": "1394046000000",
+			"end":   "1394049600000"
+		},
+		{
+			"id": "5",
+			"title": "Alvaro Cordero",
+			"url": "",
+			"class": "event-warning",
+			"start": "1393876800000",
+			"end":   "1393880400000"
+		},
+		{
+			"id": "7",
+			"title": "Francisco Ramirez",
+			"url": "",
+			"class": "event-warning",
+			"start": "1394208000000",
+			"end":   "1394211600000"
+		},
+        {
+            "id": "9",
+            "title": "Juan Parra Duarte",
+            "url": "",
+            "class": "event-warning",
+            "start": "1395511200000",
+            "end":   "1395513000000"
+        }
+	]
+}
