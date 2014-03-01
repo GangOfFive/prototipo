@@ -75,9 +75,11 @@ $(function () {
                 if ($('#fecha').val()) {
                     if($('#fecha').val() != '05/03/2014'){
                         $('#citas-para-fecha').slideDown();
+                        $('#no-citas-para-fecha').slideUp();
                     }
                     else{
                         $('#citas-para-fecha').slideUp();
+                        $('#no-citas-para-fecha').slideDown();
                     }
                     
                     $('#fechaSeleccionada').text(fecha.format('DD [de] MMMM [del] YYYY'));
