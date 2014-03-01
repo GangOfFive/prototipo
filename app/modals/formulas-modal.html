@@ -8,25 +8,12 @@
             </div>
 
             <div class="modal-body">
-                <ul class="nav nav-tabs">
-                    <li class="active">
-                        <a href="#buscar-recetas" data-toggle="tab">
-                            <span class="glyphicon glyphicon-search"></span>
-                            Buscar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#ingresar-otro" data-toggle="tab">
-                            <span class="glyphicon glyphicon-pencil"></span> Calcular
-                        </a>
-                    </li>
-                </ul>
 
                 <div class="tabs-agregar-calorias tab-content">
 
                     <div class="tab-pane active" id="buscar-recetas">
                         <div class="buscar-receta input-group">
-                            <input id="buscar-receta" type="text" class="form-control" placeholder="Buscar Recetas...">
+                            <input id="buscar-receta" type="text" class="form-control" placeholder="Buscar Fórmulas...">
                             <span class="input-group-btn">
                                 <button type="submit" class="btn btn-default">
                                     <span class="glyphicon glyphicon-search"></span>
@@ -34,11 +21,11 @@
                                 </button>
                             </span>
                         </div>
-                        <table class="table-listado-comida">
+                        <!--table class="table-listado-comida">
                             <thead>
                             <tr>
                                 <th>&nbsp;</th>
-                                <!--th>Porciones</th-->
+
                                 <th>Fórmulas</th>
                                 <th>Descripción</th>
                             </tr>
@@ -46,64 +33,177 @@
                             <tbody>
                             <tr>
                                 <td class="col-xs-1"><input type="checkbox"></td>
-                                <!--td class="col-xs-1"><input class="form-control input-sm" type="number"></td-->
                                 <td>Peso ideal</td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                             <tr>
                                 <td class="col-xs-1"><input type="checkbox"></td>
-                                <!--td class="col-xs-1"><input class="form-control input-sm" type="number"></td-->
                                 <td>Índice de Masa Corporal  </td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                             <tr>
                                 <td class="col-xs-1"><input type="checkbox"></td>
-                                <!--td class="col-xs-1"><input class="form-control input-sm" type="number"></td!-->
                                 <td>Porcentaje de Agua Corporal</td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                             <tr>
                                 <td class="col-xs-1"><input type="checkbox"></td>
-                                <!--td class="col-xs-1"><input class="form-control input-sm" type="number"></td-->
                                 <td>Porcentaje de Grasa Corporal</td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                             <tr>
                                 <td class="col-xs-1"><input type="checkbox"></td>
-                                <!--td class="col-xs-1"><input class="form-control input-sm" type="number"></td-->
                                 <td>Tasa Metabolismo Basal </td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                             </tbody>
-                        </table>
+                        </table-->
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="overflow:auto">
+                                    <div class="">
+                                        <div class="col-md-6">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">
+                                                    Peso ideal
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="col-md-6">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" style="height: auto;">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Peso:</label>
+                                                <input type="number" class="form-control" placeholder="45.00">
+                                            </div>
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="tel">Resultado:</label>
+                                                <input type="" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 5px">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Altura:</label>
+                                                <input type="number" class="form-control" placeholder="1.00">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 5px">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Género:</label><br>
+                                                <div class="btn-group" data-toggle-name="is_private" data-toggle="buttons-radio">
+                                                    <button type="button" value="0" class="btn" data-toggle="button">Hombre</button>
+                                                    <button type="button" value="1" class="btn" data-toggle="button">Mujer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="overflow:auto">
+                                    <div class="">
+                                        <div class="col-md-6">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="">
+                                                    Índice de Masa Corporal
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="col-md-6">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Peso:</label>
+                                                <input type="number" class="form-control" placeholder="45.00">
+                                            </div>
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="tel">Resultado:</label>
+                                                <input type="" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 5px">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Altura:</label>
+                                                <input type="number" class="form-control" placeholder="1.00">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 5px">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Género:</label><br>
+                                                <div class="btn-group" data-toggle-name="is_private" data-toggle="buttons-radio">
+                                                    <button type="button" value="0" class="btn" data-toggle="button">Hombre</button>
+                                                    <button type="button" value="1" class="btn" data-toggle="button">Mujer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="overflow:auto">
+                                    <div class="">
+                                        <div class="col-md-6">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
+                                                    Porcentaje de Agua Corporal
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="col-md-6">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Peso:</label>
+                                                <input type="number" class="form-control" placeholder="45.00">
+                                            </div>
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="tel">Resultado:</label>
+                                                <input type="" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 5px">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Altura:</label>
+                                                <input type="number" class="form-control" placeholder="1.00">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 5px">
+                                            <div class="col-xs-12 col-md-6">
+                                                <label for="">Género:</label><br>
+                                                <div class="btn-group" data-toggle-name="is_private" data-toggle="buttons-radio">
+                                                    <button type="button" value="0" class="btn" data-toggle="button">Hombre</button>
+                                                    <button type="button" value="1" class="btn" data-toggle="button">Mujer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="tab-pane" id="ingresar-otro">
-                        <!--table class="table-listado-comida">
-                            <thead>
-                            <tr>
-                                <th>Porciones</th>
-                                <th>Descripción</th>
-                                <th>Calorías por Porción</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
-                                <td><input class="form-control input-sm" type="text"></td>
-                                <td class="calorias"><input class="form-control input-sm" type="number"></td>
-                            </tr><tr>
-                                <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
-                                <td><input class="form-control input-sm" type="text"></td>
-                                <td class="calorias"><input class="form-control input-sm" type="number"></td>
-                            </tr><tr>
-                                <td class="col-xs-1"><input class="form-control input-sm" type="number"></td>
-                                <td><input class="form-control input-sm" type="text"></td>
-                                <td class="calorias"><input class="form-control input-sm" type="number"></td>
-                            </tr>
-                            </tbody>
-                        </table-->
-
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
                                 <label for="">Peso:</label>
