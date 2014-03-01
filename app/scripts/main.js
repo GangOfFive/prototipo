@@ -119,7 +119,6 @@ $(function () {
 
     // Calendario
     if ($('#calendar').length) {
-        console.log('hello world1');
         var calendarOpts = {
             events_source: '/scripts/citas.json',
             view: 'month',
@@ -170,7 +169,6 @@ $(function () {
     }
 
     if ($('#calendar2').length) {
-        console.log('hello world');
         var calendarOpts = {
             events_source: '/scripts/citas2.json',
             view: 'month',
@@ -223,5 +221,11 @@ $(function () {
     $('#calendar').dblclick(function() {
         window.location.href = '/calendarizar-cita2.html';
     });
+
+    $('#calendar2').dblclick(function() {
+        window.location.href = '/calendarizar-cita3.html';
+    });
+
+    $('#paciente-existente-form2').slideToggle();
 
 });

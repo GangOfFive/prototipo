@@ -77,35 +77,34 @@
                 <button class="btn btn-default btn-xs btn-plan-toggle btn-plan-extendido">existente</button>
             </div>
         </h2>
-        <div class="row" id="tipo-paciente-wrap">
-            <div class="col-xs-12 col-md-6">
-                <div class="hero-widget well well-sm">
-                    <div class="icon hidden-xs">
-                        <i class="glyphicon glyphicon-user"></i>
+        <div id="tipo-paciente-wrap">
+            <form role="form" id="paciente-existente-form2" style="display: none;" class="crear-cita-form">
+                <h3>Paciente existente</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control" value="Juan"/>
                     </div>
-                    <div class="text">
-                        <var>Nuevo</var>
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Primer apellido</label>
+                        <input type="text" class="form-control" value="Parra"/>
                     </div>
-                    <div class="options">
-                        <a class="btn btn-primary" id="btn-agregar-paciente"><i class="glyphicon glyphicon-plus"></i> Agregar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <div class="hero-widget well well-sm">
-                    <div class="icon hidden-xs">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </div>
-                    <div class="text">
-                        <var>Existente</var>
-                    </div>
-                    <div class="options">
-                        <a id="btn-paciente-existente" href="#lista-pacientes" class="btn btn-success" data-toggle="modal" data-target="#lista-pacientes"><i class="glyphicon glyphicon-user"></i> Buscar</a>
-
-                        <!--<a class="btn btn-primary" ><i class="glyphicon glyphicon-user"></i> Buscar</a>-->
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Segundo apellido</label>
+                        <input type="text" class="form-control" value="Duarte"/>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" value="haden9@gmail.com"/>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <label for="">Telefono</label>
+                        <input type="tel" class="form-control" value="555"/>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <div id="paciente-well">
@@ -154,33 +153,7 @@
                     </div>
                 </div>
             </form>
-            <form role="form" id="paciente-existente-form" style="display: none;" class="crear-cita-form">
-                <h3>Paciente existente</h3>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <label for="">Nombre</label>
-                        <input type="text" class="form-control" value="Juan"/>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <label for="">Primer apellido</label>
-                        <input type="text" class="form-control" value="Parra"/>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <label for="">Segundo apellido</label>
-                        <input type="text" class="form-control" value="Duarte"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <label for="">Email</label>
-                        <input type="email" class="form-control" value="haden9@gmail.com"/>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <label for="">Telefono</label>
-                        <input type="tel" class="form-control" value="555"/>
-                    </div>
-                </div>
-            </form>
+
         </div>
 
         <a class="btn btn-lg btn-primary pull-right" href="lista-citas2.html">Calendarizar cita</a>
