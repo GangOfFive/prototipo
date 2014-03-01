@@ -38,8 +38,8 @@
                         <div>12/12/13</div>
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
                     </div>
-                    <span style="float: right;"><img class="media-object" src="/images/facebook-40.png" alt="bajar"></span>
-                    <span style="float: right; padding-right: 5px;"><img class="media-object" src="/images/twitter-40.png" alt="bajar"></span>
+                    <div style="float: right;" class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+                    <div style="float:right;"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
                 </li>
                 <li class="media">
                     <div class="pull-left">
@@ -50,8 +50,8 @@
                         <div>12/12/13</div>
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
                     </div>
-                    <span style="float: right;"><img class="media-object" src="/images/facebook-40.png" alt="bajar"></span>
-                    <span style="float: right; padding-right: 5px;"><img class="media-object" src="/images/twitter-40.png" alt="bajar"></span>
+                    <div style="float: right;" class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+                    <div style="float:right;"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
                 </li>
             </ul>
         </div>
@@ -66,8 +66,8 @@
                         <div>12/12/13</div>
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
                     </div>
-                    <span style="float: right;"><img class="media-object" src="/images/facebook-40.png" alt="bajar"></span>
-                    <span style="float: right; padding-right: 5px;"><img class="media-object" src="/images/twitter-40.png" alt="bajar"></span>
+                    <div style="float: right;" class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+                    <div style="float:right;"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
                 </li>
                 <li class="media">
                     <a class="pull-left">
@@ -78,12 +78,24 @@
                         <div>12/12/13</div>
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
                     </div>
-                    <span style="float: right;"><img class="media-object" src="/images/facebook-40.png" alt="bajar"></span>
-                    <span style="float: right; padding-right: 5px;"><img class="media-object" src="/images/twitter-40.png" alt="bajar"></span>
+                    <div style="float: right;" class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+                    <div style="float:right;"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
                 </li>
             </ul>
         </div>
     </div>
+
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
 
     <div class="footer">
         <small>Prototipo falafel &copy; 2014. Gang of Five.</small>
