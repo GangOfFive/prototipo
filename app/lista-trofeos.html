@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prototipo</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
@@ -19,51 +20,47 @@
     <!-- endbuild -->
 </head>
 <body>
-
 <div class="container">
-    <div id="nav"></div>
-
-    <div id="calendario" class="container">
-        <div class="page-header">
-            <h1>Calendario de citas</h1>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="pull-right" style="margin-bottom: 1rem;">
-                    <div class="btn-group">
-                        <button class="btn btn-primary" data-calendar-nav="prev"><< Ant</button>
-                        <button class="btn" data-calendar-nav="today">Hoy</button>
-                        <button class="btn btn-primary" data-calendar-nav="next">Prox >></button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="btn btn-warning" data-calendar-view="year">Año</button>
-                        <button class="btn btn-warning active" data-calendar-view="month">Mes</button>
-                        <button class="btn btn-warning" data-calendar-view="week">Semana</button>
-                        <button class="btn btn-warning" data-calendar-view="day">Día</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="span9">
-                <div id="calendar" style="cursor: pointer"></div>
-            </div>
-        </div>
-        <!-- endcalendar -->
-
-
+    <div id="nav2"></div>
+    <div class="page-header">
+        <h1>Mis Trofeos</h1>
     </div>
 
-    <modal src="modals/lista-pacientes.html"></modal>
+    <ul class="media-list">
+        <li class="media">
+            <a class="pull-left">
+                <img class="media-object" src="/images/Heart.png" alt="corazon">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Reducir Colesterol</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            </div>
+        </li>
+        <li class="media">
+            <a class="pull-left">
+                <img class="media-object" src="/images/Down.png" alt="bajar">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Bajar de Peso</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            </div>
+        </li>
+        <li class="media">
+            <a class="pull-left">
+                <img class="media-object" src="/images/Cut.png" alt="cortar">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Cortar Tallas</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            </div>
+        </li>
+    </ul>
 
     <div class="footer">
         <small>Prototipo SIMA &copy; 2014. Gang of Five.</small>
     </div>
 
 </div>
-
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
@@ -86,10 +83,7 @@
 <script src="bower_components/sass-bootstrap/js/tab.js"></script>
 <script src="bower_components/moment/moment.js"></script>
 <script src="bower_components/moment/lang/es.js"></script>
-<script src="bower_components/underscore/underscore.js"></script>
 <script src="bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
-<script src="bower_components/bootstrap-calendar/js/calendar.js"></script>
-<script src="bower_components/bootstrap-calendar/js/language/es-ES.js"></script>
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
