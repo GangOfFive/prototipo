@@ -1,6 +1,9 @@
 .reto-individual {
   @include inline-block(top);
   float: none; margin-right: -3px;
+  min-height: 450px;
+
+  .thumbnail {min-height: 460px;}
 }
 
 .reto-finalizado {
